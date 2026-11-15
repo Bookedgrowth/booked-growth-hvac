@@ -1,0 +1,232 @@
+/**
+ * Shape every industry file must follow. A new industry (for example therapy.ts)
+ * fills in this same shape and the components render it with no changes.
+ *
+ * Headline strings use **double asterisks** around the 1 or 2 words that get the
+ * blue-to-green gradient. Example: "Great Techs. **Empty Schedule.**"
+ */
+
+import type { GuaranteeKey } from "../site";
+
+export type ServiceSlug =
+  | "paid-ads"
+  | "website-design"
+  | "google-business-profile"
+  | "seo"
+  | "ai-search-visibility"
+  | "social-media";
+
+export type PageMeta = { title: string; description: string };
+
+export type Stat = {
+  id: string;
+  text: string;
+  sourceLabel: string;
+  url: string;
+};
+
+export type TitledText = { title: string; body: string };
+
+export type ContentBlock = {
+  eyebrow?: string;
+  h2: string;
+  body: string[];
+  bullets?: TitledText[];
+  statIds?: string[];
+};
+
+export type ServiceContent = {
+  slug: ServiceSlug;
+  navLabel: string;
+  navDesc: string;
+  cardTitle: string;
+  cardBlurb: string;
+  featured?: boolean;
+  schemaServiceType: string;
+  schemaDescription: string;
+  meta: PageMeta;
+  breadcrumbName: string;
+  hero: { eyebrow: string; h1: string; sub: string };
+  problem: ContentBlock;
+  deliverables: { h2: string; intro?: string; items: TitledText[] };
+  extraSections?: ContentBlock[];
+  steps: { h2: string; items: TitledText[] };
+  samplesBlock?: { h2: string; body: string; ctaLabel: string };
+  guarantee?: GuaranteeKey;
+  related: ServiceSlug[];
+  blogSlugs: string[];
+};
+
+export type FaqCategory =
+  | "General"
+  | "Working With Us"
+  | "Paid Ads"
+  | "Websites"
+  | "Google Business Profile"
+  | "SEO"
+  | "AI Search"
+  | "Social Media";
+
+export type FaqItem = {
+  id: string;
+  question: string;
+  /** First entry is the 1 to 2 sentence direct answer. Later entries add detail. */
+  answer: string[];
+  category: FaqCategory;
+  services?: ServiceSlug[];
+  /** Set when the answer still needs Stefano's wording. */
+  todo?: string;
+};
+
+export type FormField =
+  | {
+      kind: "text" | "email" | "tel" | "url";
+      name: string;
+      label: string;
+      placeholder?: string;
+      required?: boolean;
+      autoComplete?: string;
+      /** Spans both columns on wider screens. */
+      wide?: boolean;
+    }
+  | {
+      kind: "select";
+      name: string;
+      label: string;
+      placeholder: string;
+      options: string[];
+      required?: boolean;
+    }
+  | {
+      kind: "checkboxes";
+      name: string;
+      label: string;
+      options: string[];
+      required?: boolean;
+    };
+
+export type SampleSite = {
+  slug: string;
+  name: string;
+  style: string;
+  live: boolean;
+};
+
+export type IndustryContent = {
+  key: string;
+  audience: {
+    singular: string; // "HVAC company"
+    plural: string; // "HVAC and plumbing companies"
+    customer: string; // "homeowner"
+    customers: string; // "homeowners"
+  };
+  positioning: string;
+  footerServing: string;
+  organizationDescription: string;
+
+  stats: Stat[];
+  services: ServiceContent[];
+
+  home: {
+    meta: PageMeta;
+    hero: {
+      eyebrow: string;
+      h1Options: { A: string; B: string };
+      activeH1: "A" | "B";
+      sub: string;
+      primaryCta: string;
+      secondaryCta: { label: string; href: string };
+      scene: {
+        ariaLabel: string;
+        days: string[];
+        jobs: { day: number; slot: number; label: string }[];
+        stages: { caption: string; detail: string }[];
+        lsaCard: { badge: string; title: string; meta: string };
+        callCard: { title: string; body: string };
+        reviewCard: { stars: number; body: string };
+        mapLabel: string;
+        boardTitle: string;
+        fullLabel: string;
+      };
+    };
+    problem: ContentBlock;
+    whereFound: {
+      h2: string;
+      intro: string;
+      businessName: string;
+      cards: { kind: "maps" | "lsa" | "searchAd" | "organic" | "reviews"; label: string; winner: string; href: string }[];
+    };
+    servicesGrid: { h2: string; intro: string };
+    process: { h2: string; steps: TitledText[]; linkLabel: string };
+    builtToPerform: { h2: string; intro: string; items: TitledText[] };
+    guarantees: { h2: string; intro: string };
+    founder: { eyebrow: string; line: string; linkLabel: string };
+    closing: { h2: string; body: string };
+  };
+
+  howItWorks: {
+    meta: PageMeta;
+    hero: { eyebrow: string; h1: string; sub: string };
+    phases: { label: string; timing: string; title: string; body: string; checklist: string[] }[];
+    reporting: { h2: string; body: string; metrics: TitledText[] };
+    noSurprises: { h2: string; items: string[] };
+  };
+
+  about: {
+    meta: PageMeta;
+    eyebrow: string;
+    h1: string;
+    h2: string;
+    story: string[];
+    whyOnly: { h2: string; body: string[] };
+    howIWork: { h2: string; items: TitledText[] };
+    facts: string[];
+  };
+
+  samples: {
+    meta: PageMeta;
+    h1: string;
+    intro: string;
+    disclaimer: string;
+    category: string; // URL segment on samples.bookedgrowth.net
+    sites: SampleSite[];
+  };
+
+  faqPage: {
+    meta: PageMeta;
+    eyebrow: string;
+    h1: string;
+    intro: string;
+    pricingAnswer: string;
+  };
+
+  blog: {
+    meta: PageMeta;
+    h1: string;
+    intro: string;
+    categories: string[];
+    signup: { h2: string; body: string; buttonLabel: string; placeholderNote: string };
+    authorLine: string;
+    ctaBox: { h3: string; body: string };
+  };
+
+  contact: {
+    meta: PageMeta;
+    eyebrow: string;
+    h1: string;
+    sub: string;
+    formTitle: string;
+    formNote: string;
+    calTitle: string;
+    calNote: string;
+    reassurance: string;
+    submitLabel: string;
+    successTitle: string;
+    successBody: string;
+    leadSource: string;
+    fields: FormField[];
+  };
+
+  closingCta: { h2: string; body: string };
+  seeAllFaqLabel: string;
+};
