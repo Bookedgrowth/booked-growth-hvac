@@ -531,6 +531,30 @@ export const hvac: IndustryContent = {
         { title: "Google Business Profile setup", body: "Your map listing, done right." },
       ],
     },
+    sampleAudit: {
+      h2: "See What Your **Free Audit** Finds.",
+      intro: "Every audit ends with a short list of real problems and a clear fix for each one. Here's what that looks like.",
+      label: "Sample audit, fictional company",
+      company: "Sample Heating & Air",
+      companyNote: "Sample data",
+      findings: [
+        { severity: "High", title: "Not in the top 3 of the Maps pack for 'AC repair near me'", fix: "Fix your categories, add your services and start a steady review system." },
+        { severity: "High", title: "No call tracking on the website", fix: "Add tracking numbers so you know which ads and pages ring the phone." },
+        { severity: "High", title: "Site loads in 7.2 seconds on mobile", fix: "Compress images and trim heavy scripts so the page loads fast on a phone." },
+        { severity: "Medium", title: "Google profile missing 6 services", fix: "List every service you offer so Google shows you for more searches." },
+        { severity: "Medium", title: "Missed calls get no reply after hours", fix: "Turn on automatic text-back so after-hours callers hear from you right away." },
+      ],
+    },
+    testimonials: {
+      h2: "What Clients Say About **Working With Us.**",
+      // Real quotes only, added with written permission. Never add placeholder quotes.
+      items: [],
+    },
+    foundingPartner: {
+      eyebrow: "Founding Partner Program",
+      h2: "Become a **Founding Partner.**",
+      body: "We're taking on a limited number of HVAC and plumbing companies as founding partners. You get priority attention and a hands-on launch. We get a case study and your honest feedback.",
+    },
     guarantees: {
       h2: "We Put Our Work **on the Line.**",
       intro: "Simple promises, in writing.",

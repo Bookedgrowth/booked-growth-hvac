@@ -99,6 +99,12 @@ export const site = {
 
   samplesBaseUrl: "https://samples.bookedgrowth.net",
 
+  // Home page sections that stay hidden until there is something real to show.
+  // Testimonials: only real quotes, with written permission. Data lives in the industry file.
+  showTestimonials: false,
+  // TODO(stefano): set the number of founding partner spots and the terms before turning this on.
+  showFoundingPartner: false,
+
   // Real credentials only. Shown on About and in the home trust row.
   // TODO(stefano): confirm the exact certification name and add others as you earn them.
   credentials: [{ name: "Google Ads Search Certified", issuer: "Google" }],

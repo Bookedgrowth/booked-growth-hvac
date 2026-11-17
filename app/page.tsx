@@ -11,6 +11,7 @@ import { GuaranteeGrid } from "@/components/Guarantees";
 import { Headline, RichText } from "@/components/Text";
 import { StatSource } from "@/components/StatNote";
 import Icon from "@/components/Icon";
+import { SampleAudit, Testimonials, FoundingPartner } from "@/components/Proof";
 
 const h = industry.home;
 
@@ -100,6 +101,11 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
+
+      {/* Proof without testimonials */}
+      <SampleAudit />
+      <Testimonials />
+      <FoundingPartner />
 
       {/* Guarantees */}
       <section className="section section-navy" aria-labelledby="guarantees">

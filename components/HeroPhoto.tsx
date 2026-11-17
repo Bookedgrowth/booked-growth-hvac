@@ -11,6 +11,7 @@ import Link from "next/link";
 import { industry, site } from "@/content";
 import { Headline } from "./Text";
 import Icon from "./Icon";
+import Credentials from "./Credentials";
 
 const hero = industry.home.hero;
 
@@ -73,6 +74,7 @@ export default function HeroPhoto() {
               {hero.secondaryCta.label}
             </Link>
           </div>
+          <Credentials className="mt-7" />
         </div>
 
         {/* On phones this column is static, so the photo fills the whole section behind the copy. */}

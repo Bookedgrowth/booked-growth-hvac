@@ -105,6 +105,13 @@ export type FormField =
       required?: boolean;
     };
 
+export type Testimonial = {
+  quote: string;
+  firstName: string;
+  businessType: string;
+  city: string;
+};
+
 export type SampleSite = {
   slug: string;
   name: string;
@@ -161,6 +168,16 @@ export type IndustryContent = {
       };
     };
     builtToPerform: { h2: string; intro: string; items: TitledText[] };
+    sampleAudit: {
+      h2: string;
+      intro: string;
+      label: string;
+      company: string;
+      companyNote: string;
+      findings: { severity: "High" | "Medium" | "Low"; title: string; fix: string }[];
+    };
+    testimonials: { h2: string; items: Testimonial[] };
+    foundingPartner: { eyebrow: string; h2: string; body: string };
     guarantees: { h2: string; intro: string };
     founder: { eyebrow: string; h2: string; line: string; founderLine: string; linkLabel: string };
     closing: { h2: string; body: string };
