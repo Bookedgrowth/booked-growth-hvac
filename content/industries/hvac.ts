@@ -536,10 +536,11 @@ export const hvac: IndustryContent = {
       intro: "Simple promises, in writing.",
     },
     founder: {
-      eyebrow: "Who you'll work with",
-      // TODO(stefano): rewrite this one-liner in your own words.
-      line: "I run Booked Growth from South Florida. I'm Google Ads Search certified, and you'll work with me directly, not an account manager.",
-      linkLabel: "More about me",
+      eyebrow: "Who we are",
+      h2: "A South Florida Agency Built for **the Trades.**",
+      line: "Booked Growth works only with HVAC and plumbing companies. You get one dedicated point of contact who knows your account, and reports measured in booked jobs.",
+      founderLine: "Founded by Stefano Branca",
+      linkLabel: "More about us",
     },
     closing: {
       h2: "Ready to **Fill the Board?**",
@@ -567,7 +568,7 @@ export const hvac: IndustryContent = {
         label: "Step 1",
         timing: "30 minutes",
         title: "The free audit",
-        body: "A video call where I show you how homeowners find you today and where you're losing calls.",
+        body: "A video call where we show you how homeowners find you today and where you're losing calls.",
         checklist: [
           "Your Google Business Profile: categories, reviews, photos and Maps ranking",
           "Your website: speed on a phone, tap-to-call, service and city pages",
@@ -640,7 +641,7 @@ export const hvac: IndustryContent = {
       h2: "No **Surprises.**",
       items: [
         "You own your website, your Google profile and your ad accounts.",
-        "You work with me directly. No hand-offs.",
+        "You get one dedicated point of contact who knows your account.",
         "Pricing is covered on the free audit call, before you commit to anything.",
       ],
     },
@@ -651,45 +652,59 @@ export const hvac: IndustryContent = {
   /* ------------------------------------------------------------------ */
   about: {
     meta: {
-      title: "About Booked Growth | HVAC Marketing, South Florida",
+      title: "About Booked Growth | HVAC & Plumbing Marketing Agency",
       description:
-        "Meet Stefano, founder of Booked Growth. A Google Ads Search certified marketer helping South Florida HVAC and plumbing companies get more calls.",
+        "Booked Growth is a South Florida marketing agency for HVAC and plumbing companies. We build websites, Google profiles and ads measured in booked jobs.",
     },
-    eyebrow: "About",
-    h1: "About **Booked Growth.**",
-    // TODO(stefano): replace with your own H2. Do not use the barbershop "Born From the Chair" story.
-    h2: "Hi, I'm **Stefano.**",
-    // TODO(stefano): rewrite in your voice. Only facts you approved are used below.
-    story: [
-      "I run Booked Growth, a marketing agency based in South Florida.",
-      "Before Booked Growth, I worked hands-on managing client accounts at a marketing agency.",
-      "I'm Google Ads Search certified, and I now focus only on HVAC and plumbing companies.",
-      // TODO(stefano): add a paragraph about your background (bilingual? other experience?). Don't let me invent it.
-      "My goal is simple: help good contractors get found, get called and get booked.",
-    ],
+    eyebrow: "About us",
+    h1: "Marketing Built for the Trades. **Measured in Booked Jobs.**",
+    sub: "Booked Growth is a South Florida marketing agency that works only with HVAC and plumbing companies. We build the websites, Google profiles and ads that turn local searches into booked jobs.",
+    why: {
+      eyebrow: "Why we exist",
+      h2: "Good Contractors Shouldn't Lose Jobs to **Louder Ones.**",
+      body: [
+        "When a homeowner's AC quits, they don't research who does the best work. They pick whoever shows up first and looks the most trustworthy.",
+        "So good companies lose jobs every day to competitors with louder ads and better websites, not better techs.",
+        "We exist to close that gap. We help good HVAC and plumbing companies get found first, look the part and turn more calls into booked jobs.",
+      ],
+    },
+    principles: {
+      h2: "What We **Stand For.**",
+      items: [
+        { icon: "home", title: "You own everything", body: "Your website, domain, Google profile and ad accounts stay in your name. Always." },
+        { icon: "chart", title: "Booked jobs, not clicks", body: "We report calls, booked jobs and cost per lead. Not vanity numbers." },
+        { icon: "shield", title: "Foundation before ads", body: "We don't spend your money on ads until your profile and site are ready to turn clicks into calls." },
+        { icon: "mail", title: "Plain-English reporting", body: "One clear monthly report. No jargon, no 40-page decks." },
+        // TODO(stefano): add your response-time promise here (for example, "a reply within one business day").
+        { icon: "chat", title: "Fast answers", body: "Questions get a clear, direct answer from someone who knows your account." },
+        { icon: "check", title: "Honest guarantees", body: "Simple promises with no fine print. [See our guarantees](/#guarantees)." },
+      ],
+    },
     whyOnly: {
       h2: "Why HVAC and **Plumbing Only.**",
       body: [
-        "When you serve one kind of business, you learn it deeply. You learn the seasons, the searches, the jobs that pay and the ones that don't.",
+        "When you serve one kind of business, you learn it deeply. We know the seasons, the searches, the jobs that pay and the ones that don't.",
         "HVAC and plumbing are urgent. When something breaks, homeowners need help now, and the company that shows up first usually gets the job. That's exactly where good marketing makes the biggest difference.",
-        // TODO(stefano): add your personal reason for choosing HVAC and plumbing, if you want one here.
       ],
     },
-    howIWork: {
-      h2: "How **I Work.**",
-      items: [
-        { title: "One person, start to finish", body: "I do the audit, the strategy and the work. You always know who's on your account." },
-        { title: "Direct access", body: "You get my number and email. No ticket systems." },
-        { title: "No account-manager hand-offs", body: "The person you meet on the audit is the person doing the work." },
+    howWeWork: {
+      h2: "How **We Work.**",
+      steps: [
+        { title: "Free audit", body: "We show you how homeowners find you today and where calls slip away." },
+        { title: "Build the foundation", body: "Website, Google profile and call tracking, set up the right way." },
+        { title: "Turn on the calls", body: "Ads and Local Services Ads, once the foundation is ready." },
+        { title: "Report and improve", body: "A plain-English report every month, and steady tuning." },
       ],
+      linkLabel: "See the full process",
     },
-    facts: [
-      "Founder of Booked Growth",
-      "Based in South Florida",
-      "Google Ads Search certified",
-      "Hands-on agency account management experience",
-      // TODO(stefano): add more facts (languages spoken, years of experience) if you want them listed.
-    ],
+    credentialsH2: "Credentials",
+    founder: {
+      title: "Founded by Stefano Branca",
+      quote:
+        "I started Booked Growth to give hardworking local companies the same marketing big brands get, with honest reporting and no runaround.",
+      // TODO(stefano): confirm whether to add "Stefano also manages client accounts for a marketing agency." Leave empty to hide it.
+      note: "",
+    },
   },
 
   /* ------------------------------------------------------------------ */
@@ -768,8 +783,8 @@ export const hvac: IndustryContent = {
     },
     eyebrow: "Free audit",
     h1: "Get Your Free **Online Audit.**",
-    sub: "A 30-minute call where I show you how homeowners find you today and where you're losing calls. No pressure, no pitch deck.",
-    formTitle: "Tell me about your company",
+    sub: "A 30-minute call where we show you how homeowners find you today and where you're losing calls. No pressure, no pitch deck.",
+    formTitle: "Tell us about your company",
     formNote: "Takes 2 minutes. Website URL is optional.",
     calTitle: "Book Your Free Online Audit Call",
     calNote: "Pick a time that works for you. Free, 30 minutes, held via Google Meet.",
@@ -777,7 +792,7 @@ export const hvac: IndustryContent = {
     submitLabel: "Get My Free Audit",
     successTitle: "You're all set.",
     successBody:
-      "I'll review how homeowners find you and reach out within 48 hours. Want to skip the wait? Book a call below.",
+      "We'll review how homeowners find you and reach out within 48 hours. Want to skip the wait? Book a call below.",
     leadSource: "HVAC site",
     fields: [
       { kind: "text", name: "full_name", label: "Full Name", placeholder: "John Smith", required: true, autoComplete: "name" },

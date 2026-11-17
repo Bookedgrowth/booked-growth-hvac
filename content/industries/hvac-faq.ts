@@ -84,8 +84,8 @@ export const hvacFaqs: FaqItem[] = [
     category: "Working With Us",
     question: "Who will I work with day to day?",
     answer: [
-      "You work with me, Stefano, the founder. There are no account-manager hand-offs.",
-      "I do your audit, build your plan and do the work. You get my direct number and email.",
+      "You get one dedicated point of contact who knows your account.",
+      "That person knows your audit, your plan and your results, so you never have to repeat yourself or chase answers.",
     ],
   },
 

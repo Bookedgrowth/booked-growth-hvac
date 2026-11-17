@@ -98,6 +98,10 @@ export const site = {
   },
 
   samplesBaseUrl: "https://samples.bookedgrowth.net",
+
+  // Real credentials only. Shown on About and in the home trust row.
+  // TODO(stefano): confirm the exact certification name and add others as you earn them.
+  credentials: [{ name: "Google Ads Search Certified", issuer: "Google" }],
 } as const;
 
 export type GuaranteeKey = keyof typeof site.guarantees;

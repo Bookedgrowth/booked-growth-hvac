@@ -162,7 +162,7 @@ export type IndustryContent = {
     };
     builtToPerform: { h2: string; intro: string; items: TitledText[] };
     guarantees: { h2: string; intro: string };
-    founder: { eyebrow: string; line: string; linkLabel: string };
+    founder: { eyebrow: string; h2: string; line: string; founderLine: string; linkLabel: string };
     closing: { h2: string; body: string };
   };
 
@@ -178,11 +178,13 @@ export type IndustryContent = {
     meta: PageMeta;
     eyebrow: string;
     h1: string;
-    h2: string;
-    story: string[];
+    sub: string;
+    why: { eyebrow: string; h2: string; body: string[] };
+    principles: { h2: string; items: { icon: string; title: string; body: string }[] };
     whyOnly: { h2: string; body: string[] };
-    howIWork: { h2: string; items: TitledText[] };
-    facts: string[];
+    howWeWork: { h2: string; steps: TitledText[]; linkLabel: string };
+    credentialsH2: string;
+    founder: { title: string; quote: string; note: string };
   };
 
   samples: {

@@ -114,25 +114,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Founder teaser */}
+      {/* Who we are (business first, founder second) */}
       <section className="section light" aria-labelledby="founder">
         <div className="container">
-          <div className="card flex flex-col items-start gap-6 sm:flex-row sm:items-center md:gap-10">
-            <Image
-              src={site.founder.headshot}
-              alt={`${site.founder.name}, ${site.founder.role} of ${site.brandName}`}
-              width={160}
-              height={160}
-              sizes="160px"
-              className="h-32 w-32 shrink-0 rounded-2xl object-cover object-top md:h-40 md:w-40"
-            />
+          <div className="card grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-center md:gap-10">
             <div>
               <span className="eyebrow">{h.founder.eyebrow}</span>
-              <h2 id="founder" className="h3 !text-[26px]">{site.founder.name}</h2>
-              <p className="mt-3 lead max-w-[620px]">{h.founder.line}</p>
-              <Link href="/about" className="mt-4 inline-flex items-center gap-2 font-semibold text-[var(--cyan)] hover:text-white">
+              <Headline text={h.founder.h2} id="founder" className="h2 !text-[clamp(26px,3.4vw,36px)]" />
+              <p className="mt-4 lead max-w-[620px]">{h.founder.line}</p>
+              <Link href="/about" className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--cyan)] hover:text-white">
                 {h.founder.linkLabel} <Icon name="arrow" size={18} />
               </Link>
+            </div>
+            <div className="flex items-center gap-4 md:justify-end">
+              <Image
+                src={site.founder.headshot}
+                alt={`${site.founder.name}, ${site.founder.role} of ${site.brandName}`}
+                width={72}
+                height={72}
+                sizes="72px"
+                className="h-[72px] w-[72px] shrink-0 rounded-full object-cover object-top"
+              />
+              <p className="font-semibold">{h.founder.founderLine}</p>
             </div>
           </div>
         </div>
