@@ -443,6 +443,30 @@ p {
   color: #fcd34d;
 }
 
+/* ---------- Hero phone notifications ---------- */
+.notif {
+  background: rgba(246, 246, 248, 0.9);
+  -webkit-backdrop-filter: blur(18px) saturate(1.6);
+  backdrop-filter: blur(18px) saturate(1.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.28);
+  animation: notif-in 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes notif-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .notif {
+    animation: none;
+  }
+}
+
 /* Hide horizontal scrollbar on swipe rows but keep them scrollable */
 .no-scrollbar {
   scrollbar-width: none;

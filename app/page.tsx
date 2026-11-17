@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { industry, site } from "@/content";
 import { buildMetadata } from "@/lib/seo";
-import HeroScroll from "@/components/HeroScroll";
+import HeroPhoto from "@/components/HeroPhoto";
+import BoardCompare from "@/components/BoardCompare";
 import WhereFound from "@/components/WhereFound";
 import ServiceCards from "@/components/ServiceCards";
 import ClosingCta from "@/components/ClosingCta";
@@ -20,7 +21,7 @@ const performIcons = ["mobile", "phone", "pin", "chart", "calendar", "shield"];
 export default function HomePage() {
   return (
     <>
-      <HeroScroll />
+      <HeroPhoto />
 
       {/* Problem */}
       <section className="section light" aria-labelledby="problem">
@@ -59,7 +60,10 @@ export default function HomePage() {
       <section className="section light section-alt" aria-labelledby="process">
         <div className="container">
           <Headline text={h.process.h2} id="process" />
-          <ol className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-10">
+            <BoardCompare />
+          </div>
+          <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {h.process.steps.map((s, i) => (
               <li key={s.title} className="card relative">
                 <span className="font-display text-[56px] font-extrabold leading-none gradient-text">{i + 1}</span>

@@ -435,52 +435,23 @@ export const hvac: IndustryContent = {
       sub: "Booked Growth builds the websites, Google profiles and ads that turn local searches into booked HVAC jobs. Built only for HVAC and plumbing companies.",
       primaryCta: "Get Your Free Online Audit",
       secondaryCta: { label: "See how it works", href: "/how-it-works" },
-      scene: {
-        ariaLabel:
-          "Animation: a weekly dispatch board starts almost empty and fills with job cards as new calls come in from Google Maps, Local Services Ads, answered calls and reviews.",
-        boardTitle: "This week",
-        days: ["Mon", "Tue", "Wed", "Thu", "Fri"],
-        // slot 0 to 3 = morning to evening
-        jobs: [
-          { day: 1, slot: 1, label: "Tune-up, 11am" },
-          { day: 3, slot: 2, label: "AC repair, 2pm" },
-          // stage 1: maps
-          { day: 0, slot: 0, label: "No cooling, 8am" },
-          { day: 2, slot: 1, label: "Tune-up, 10am" },
-          { day: 4, slot: 2, label: "AC repair, 1pm" },
-          // stage 2: LSA
-          { day: 0, slot: 2, label: "New system quote, 2pm" },
-          { day: 1, slot: 3, label: "Water heater, 4pm" },
-          { day: 3, slot: 0, label: "Drain clog, 8am" },
-          // stage 3: calls answered
-          { day: 2, slot: 3, label: "Tune-up, 4pm" },
-          { day: 4, slot: 0, label: "Leak repair, 9am" },
-          { day: 1, slot: 0, label: "Thermostat, 8am" },
-          // stage 4: reviews
-          { day: 2, slot: 0, label: "Duct check, 9am" },
-          { day: 3, slot: 3, label: "AC repair, 5pm" },
-          { day: 0, slot: 1, label: "Tune-up, 11am" },
-          // stage 5: full
-          { day: 4, slot: 1, label: "Install, 11am" },
-          { day: 0, slot: 3, label: "AC repair, 4pm" },
-          { day: 2, slot: 2, label: "Heat pump, 1pm" },
-          { day: 3, slot: 1, label: "Tune-up, 10am" },
-          { day: 1, slot: 2, label: "AC repair, 2pm" },
-          { day: 4, slot: 3, label: "Tune-up, 4pm" },
-        ],
-        stages: [
-          { caption: "Found on Google Maps", detail: "Your pin shows up when nearby homeowners search." },
-          { caption: "Leads from Local Services Ads", detail: "Pay-per-lead calls from the top of Google." },
-          { caption: "Every call answered", detail: "Missed a call? A text goes back in seconds." },
-          { caption: "Trusted before you arrive", detail: "Fresh 5-star reviews close the deal." },
-          { caption: "A full board", detail: "More booked jobs, week after week." },
-        ],
-        mapLabel: "Your Company",
-        lsaCard: { badge: "Google Guaranteed", title: "New lead: AC not cooling", meta: "Local Services Ads · just now" },
-        callCard: { title: "Missed call, text sent back", body: "Hi! Sorry we missed you. Want us to call you right back?" },
-        reviewCard: { stars: 5, body: "On time, explained everything, AC working again." },
-        fullLabel: "Board full",
+      /*
+       * Hero photo. Free license from Pexels (no attribution required).
+       * Source: https://www.pexels.com/photo/technician-inspecting-outdoor-hvac-unit-32497161/
+       * Photographer: Kathleen Austin Kuhn (https://www.pexels.com/@kathleen-austin-kuhn)
+       * Cropped to remove the equipment brand logo and a parts label at the bottom.
+       */
+      photo: {
+        src: "/hero-tech.jpg",
+        width: 1800,
+        height: 1360,
+        alt: "HVAC technician inspecting a home's outdoor AC unit with a flashlight",
       },
+      notifications: [
+        { icon: "phone", app: "Phone", text: "New call from Local Services Ads, AC not cooling" },
+        { icon: "chat", app: "Messages", text: "Missed call, text sent back automatically" },
+        { icon: "calendar", app: "Calendar", text: "Job booked, Tue 2:00 PM, AC repair" },
+      ],
     },
     problem: {
       eyebrow: "The problem",
@@ -516,6 +487,37 @@ export const hvac: IndustryContent = {
         { title: "Turn on the calls", body: "Ads and Local Services Ads, once the foundation is ready." },
       ],
       linkLabel: "See the full process",
+      board: {
+        ariaLabel:
+          "Two weekly job boards side by side. Before: only two jobs booked all week. After: every slot from Monday to Friday is booked.",
+        before: { label: "Before", caption: "A slow week. Two jobs booked." },
+        after: { label: "After", caption: "Calls answered, jobs booked, board full." },
+        days: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+        // slot 0 to 3 = morning to evening. The first `beforeCount` jobs show on the Before board.
+        beforeCount: 2,
+        jobs: [
+          { day: 1, slot: 1, label: "Tune-up, 11am" },
+          { day: 3, slot: 2, label: "AC repair, 2pm" },
+          { day: 0, slot: 0, label: "No cooling, 8am" },
+          { day: 2, slot: 1, label: "Tune-up, 10am" },
+          { day: 4, slot: 2, label: "AC repair, 1pm" },
+          { day: 0, slot: 2, label: "New system quote, 2pm" },
+          { day: 1, slot: 3, label: "Water heater, 4pm" },
+          { day: 3, slot: 0, label: "Drain clog, 8am" },
+          { day: 2, slot: 3, label: "Tune-up, 4pm" },
+          { day: 4, slot: 0, label: "Leak repair, 9am" },
+          { day: 1, slot: 0, label: "Thermostat, 8am" },
+          { day: 2, slot: 0, label: "Duct check, 9am" },
+          { day: 3, slot: 3, label: "AC repair, 5pm" },
+          { day: 0, slot: 1, label: "Tune-up, 11am" },
+          { day: 4, slot: 1, label: "Install, 11am" },
+          { day: 0, slot: 3, label: "AC repair, 4pm" },
+          { day: 2, slot: 2, label: "Heat pump, 1pm" },
+          { day: 3, slot: 1, label: "Tune-up, 10am" },
+          { day: 1, slot: 2, label: "AC repair, 2pm" },
+          { day: 4, slot: 3, label: "Tune-up, 4pm" },
+        ],
+      },
     },
     builtToPerform: {
       h2: "Built to **Perform.**",

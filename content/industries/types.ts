@@ -136,18 +136,8 @@ export type IndustryContent = {
       sub: string;
       primaryCta: string;
       secondaryCta: { label: string; href: string };
-      scene: {
-        ariaLabel: string;
-        days: string[];
-        jobs: { day: number; slot: number; label: string }[];
-        stages: { caption: string; detail: string }[];
-        lsaCard: { badge: string; title: string; meta: string };
-        callCard: { title: string; body: string };
-        reviewCard: { stars: number; body: string };
-        mapLabel: string;
-        boardTitle: string;
-        fullLabel: string;
-      };
+      photo: { src: string; width: number; height: number; alt: string };
+      notifications: { icon: string; app: string; text: string }[];
     };
     problem: ContentBlock;
     whereFound: {
@@ -157,7 +147,19 @@ export type IndustryContent = {
       cards: { kind: "maps" | "lsa" | "searchAd" | "organic" | "reviews"; label: string; winner: string; href: string }[];
     };
     servicesGrid: { h2: string; intro: string };
-    process: { h2: string; steps: TitledText[]; linkLabel: string };
+    process: {
+      h2: string;
+      steps: TitledText[];
+      linkLabel: string;
+      board: {
+        ariaLabel: string;
+        before: { label: string; caption: string };
+        after: { label: string; caption: string };
+        days: string[];
+        beforeCount: number;
+        jobs: { day: number; slot: number; label: string }[];
+      };
+    };
     builtToPerform: { h2: string; intro: string; items: TitledText[] };
     guarantees: { h2: string; intro: string };
     founder: { eyebrow: string; line: string; linkLabel: string };
