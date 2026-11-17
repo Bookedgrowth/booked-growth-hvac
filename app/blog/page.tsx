@@ -23,7 +23,7 @@ export default function BlogIndexPage() {
   return (
     <>
       <PageHero h1={b.h1} sub={b.intro} crumbs={[{ name: "Blog", path: "/blog" }]} />
-      <section className="px-[var(--gutter)] pb-[var(--section-y)]">
+      <section className="section light">
         <div className="container flex flex-col gap-14">
           {featured && (
             <div>

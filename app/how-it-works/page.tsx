@@ -19,13 +19,13 @@ export default function HowItWorksPage() {
         </div>
       </PageHero>
 
-      <section className="section" aria-label="Our process">
+      <section className="section light" aria-label="Our process">
         <div className="container">
           <ol className="relative flex flex-col gap-6 md:gap-8">
             <span aria-hidden="true" className="absolute left-[23px] top-4 bottom-4 hidden w-px md:block" style={{ background: "var(--gradient)" }} />
             {hw.phases.map((ph, i) => (
               <li key={ph.title} className="relative grid gap-4 md:grid-cols-[48px_1fr] md:gap-8">
-                <span className="relative z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-[var(--line-strong)] bg-[var(--bg)] font-display text-lg font-extrabold text-white md:inline-flex">
+                <span className="relative z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-[var(--line-strong)] bg-[var(--bg-raised)] font-display text-lg font-extrabold text-white md:inline-flex">
                   {i + 1}
                 </span>
                 <div className="card grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-10">
@@ -52,7 +52,7 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <section className="section section-alt" aria-labelledby="reporting">
+      <section className="section light section-alt" aria-labelledby="reporting">
         <div className="container">
           <div className="max-w-[760px]">
             <Headline text={hw.reporting.h2} id="reporting" />
@@ -69,7 +69,7 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="no-surprises">
+      <section className="section light" aria-labelledby="no-surprises">
         <div className="container-narrow">
           <Headline text={hw.noSurprises.h2} id="no-surprises" />
           <ul className="mt-8 flex flex-col gap-4">

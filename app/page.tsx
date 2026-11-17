@@ -23,7 +23,7 @@ export default function HomePage() {
       <HeroScroll />
 
       {/* Problem */}
-      <section className="section" aria-labelledby="problem">
+      <section className="section light" aria-labelledby="problem">
         <div className="container grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <span className="eyebrow">{h.problem.eyebrow}</span>
@@ -43,7 +43,7 @@ export default function HomePage() {
       <WhereFound />
 
       {/* Services */}
-      <section className="section" aria-labelledby="services">
+      <section className="section light" aria-labelledby="services">
         <div className="container">
           <div className="max-w-[760px]">
             <Headline text={h.servicesGrid.h2} id="services" />
@@ -56,7 +56,7 @@ export default function HomePage() {
       </section>
 
       {/* Process */}
-      <section className="section section-alt" aria-labelledby="process">
+      <section className="section light section-alt" aria-labelledby="process">
         <div className="container">
           <Headline text={h.process.h2} id="process" />
           <ol className="mt-10 grid gap-4 md:grid-cols-3">
@@ -75,7 +75,7 @@ export default function HomePage() {
       </section>
 
       {/* Built to perform */}
-      <section className="section" aria-labelledby="perform">
+      <section className="section light" aria-labelledby="perform">
         <div className="container">
           <div className="max-w-[760px]">
             <Headline text={h.builtToPerform.h2} id="perform" />
@@ -98,7 +98,7 @@ export default function HomePage() {
       </section>
 
       {/* Guarantees */}
-      <section className="section section-alt" aria-labelledby="guarantees">
+      <section className="section section-navy" aria-labelledby="guarantees">
         <div className="container">
           <div className="max-w-[760px]">
             <Headline text={h.guarantees.h2} id="guarantees" />
@@ -111,7 +111,7 @@ export default function HomePage() {
       </section>
 
       {/* Founder teaser */}
-      <section className="section" aria-labelledby="founder">
+      <section className="section light" aria-labelledby="founder">
         <div className="container">
           <div className="card flex flex-col items-start gap-6 sm:flex-row sm:items-center md:gap-10">
             <Image

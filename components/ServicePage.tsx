@@ -51,7 +51,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
       </PageHero>
 
       {/* The problem */}
-      <section className="section" aria-labelledby="problem">
+      <section className="section light" aria-labelledby="problem">
         <div className="container grid gap-8 lg:grid-cols-2">
           <div>
             <span className="eyebrow">The problem</span>
@@ -67,7 +67,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
 
       {/* Extra sections (paid ads is the long page) */}
       {s.extraSections?.map((block, bi) => (
-        <section key={block.h2} className={`section ${bi % 2 === 0 ? "section-alt" : ""}`} aria-labelledby={`extra-${bi}`}>
+        <section key={block.h2} className={`section light ${bi % 2 === 0 ? "section-alt" : ""}`} aria-labelledby={`extra-${bi}`}>
           <div className="container">
             <div className="max-w-[760px]">
               {block.eyebrow && <span className="eyebrow">{block.eyebrow}</span>}
@@ -98,7 +98,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
       ))}
 
       {/* What you get */}
-      <section className={`section ${(s.extraSections?.length ?? 0) % 2 === 0 ? "section-alt" : ""}`} aria-labelledby="deliverables">
+      <section className={`section light ${(s.extraSections?.length ?? 0) % 2 === 0 ? "section-alt" : ""}`} aria-labelledby="deliverables">
         <div className="container">
           <Headline text={s.deliverables.h2} id="deliverables" />
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +116,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
       </section>
 
       {/* How it works for this service */}
-      <section className="section" aria-labelledby="steps">
+      <section className="section light" aria-labelledby="steps">
         <div className="container">
           <Headline text={s.steps.h2} id="steps" />
           <ol className="mt-10 grid gap-4 md:grid-cols-3">
@@ -133,7 +133,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
 
       {/* Samples block (website design) */}
       {s.samplesBlock && (
-        <section className="section-tight" aria-labelledby="samples">
+        <section className="section-tight light" aria-labelledby="samples">
           <div className="container">
             <div className="card gradient-border flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="max-w-[620px]">
@@ -150,7 +150,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
 
       {/* Guarantee */}
       {s.guarantee && (
-        <section className="section-tight" aria-label="Our guarantee">
+        <section className="section-tight section-navy" aria-label="Our guarantee">
           <div className="container max-w-[720px]">
             <GuaranteeCard k={s.guarantee} />
           </div>
@@ -159,7 +159,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
 
       {/* FAQ */}
       {serviceFaqs.length > 0 && (
-        <section className="section section-alt" aria-labelledby="faq">
+        <section className="section light section-alt" aria-labelledby="faq">
           <div className="container-narrow">
             <Headline text="Common **Questions.**" id="faq" />
             <div className="mt-8">
@@ -173,7 +173,7 @@ export default function ServicePage({ slug }: { slug: ServiceSlug }) {
       )}
 
       {/* Related services + reading */}
-      <section className="section" aria-labelledby="related">
+      <section className="section light" aria-labelledby="related">
         <div className="container">
           <Headline text="Works Even Better **Together.**" id="related" />
           <div className="mt-8 grid gap-4 md:grid-cols-2">

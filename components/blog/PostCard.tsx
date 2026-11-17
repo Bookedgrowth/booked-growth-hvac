@@ -13,7 +13,7 @@ export default function PostCard({ post, featured = false }: { post: PostMeta; f
       <div className={`flex flex-1 flex-col p-6 ${featured ? "md:p-10 md:justify-center" : ""}`}>
         <div className="flex flex-wrap items-center gap-2 text-[12px] font-bold uppercase tracking-[0.12em]">
           <span className="text-[var(--cyan)]">{post.category}</span>
-          {post.draft && <span className="rounded bg-[#fbbf24]/15 px-1.5 py-0.5 text-[#fcd34d]">Draft</span>}
+          {post.draft && <span className="tag-draft rounded px-1.5 py-0.5">Draft</span>}
         </div>
         <h3 className={`mt-3 font-display font-extrabold leading-tight text-white ${featured ? "text-[clamp(24px,3vw,34px)]" : "text-[21px]"}`}>
           {post.title}

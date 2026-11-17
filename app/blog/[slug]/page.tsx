@@ -55,12 +55,13 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
   return (
     <>
       <JsonLd data={articleSchema({ ...post, image: ogImageUrl(post.title) })} />
-      <article className="px-[var(--gutter)] pt-[calc(var(--nav-h)+40px)] pb-[var(--section-y)]">
+      <article>
+        <header className="px-[var(--gutter)] pt-[calc(var(--nav-h)+40px)] pb-10">
         <div className="container-narrow">
           <Breadcrumbs items={[{ name: "Blog", path: "/blog" }, { name: post.title, path: `/blog/${slug}` }]} />
           <div className="flex flex-wrap items-center gap-2 text-[12px] font-bold uppercase tracking-[0.12em]">
             <span className="text-[var(--cyan)]">{post.category}</span>
-            {post.draft && <span className="rounded bg-[#fbbf24]/15 px-1.5 py-0.5 text-[#fcd34d]">Draft</span>}
+            {post.draft && <span className="tag-draft rounded px-1.5 py-0.5">Draft</span>}
           </div>
           <h1 className="h1 mt-3 !text-[clamp(32px,5vw,50px)]">{post.title}</h1>
           <p className="lead mt-5">{post.excerpt}</p>
@@ -70,7 +71,11 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
               <time dateTime={post.date}>{formatDate(post.date)}</time> · {post.readTime} min read
             </span>
           </div>
+        </div>
+        </header>
 
+        <div className="light section !pt-2">
+        <div className="container-narrow">
           {showToc && (
             <nav aria-label="Table of contents" className="card mt-8 !p-5">
               <p className="text-xs font-bold uppercase tracking-[0.16em] subtle">In this guide</p>
@@ -119,6 +124,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
             </div>
           </div>
         )}
+        </div>
       </article>
     </>
   );

@@ -34,7 +34,7 @@ export default function FaqPage() {
         </nav>
       </PageHero>
 
-      <section className="section !pt-0">
+      <section className="section light">
         <div className="container-narrow flex flex-col gap-14">
           {groups.map((g) => (
             <div key={g.category} id={slugify(g.category)}>

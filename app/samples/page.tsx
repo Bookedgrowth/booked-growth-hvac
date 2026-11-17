@@ -17,7 +17,7 @@ export default function SamplesPage() {
         </p>
       </PageHero>
 
-      <section className="section !pt-0" aria-label="Sample sites">
+      <section className="section light" aria-label="Sample sites">
         <div className="container">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {sm.sites.map((s) => {

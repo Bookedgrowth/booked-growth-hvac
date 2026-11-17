@@ -24,6 +24,11 @@
   --text-subtle: #8f9ab0; /* 6.4:1 on --bg */
 
   --gradient: linear-gradient(100deg, #4b89f3 0%, #31cff9 50%, #92f18f 100%);
+  --tint: rgba(255, 255, 255, 0.04);
+  --serp-title: #8ab4f8;
+  --star: #fbbf24;
+  --map-a: #232a3d;
+  --map-b: #20273a;
 
   /* Spacing scale (4px base). Use these, not one-off values. */
   --space-1: 4px;
@@ -132,6 +137,10 @@ p {
 .section-alt {
   background: var(--bg-deep);
 }
+.section-navy {
+  background: var(--bg-deep);
+  color: var(--text);
+}
 .grid-bg {
   background-image:
     linear-gradient(rgba(75, 137, 243, 0.05) 1px, transparent 1px),
@@ -220,7 +229,7 @@ p {
 }
 .btn-outline {
   border: 1px solid var(--line-strong);
-  color: #fff;
+  color: var(--text);
   background: transparent;
 }
 .btn-outline:hover {
@@ -269,13 +278,13 @@ p {
   margin-top: 1.1em;
 }
 .prose h2 {
-  color: #fff;
+  color: var(--text);
   font-size: clamp(24px, 3vw, 30px);
   font-weight: 800;
   margin-top: 2em;
 }
 .prose h3 {
-  color: #fff;
+  color: var(--text);
   font-size: 21px;
   font-weight: 700;
   margin-top: 1.6em;
@@ -286,7 +295,7 @@ p {
   text-underline-offset: 3px;
 }
 .prose strong {
-  color: #fff;
+  color: var(--text);
 }
 .prose ul,
 .prose ol {
@@ -320,13 +329,13 @@ p {
   vertical-align: top;
 }
 .prose th {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  background: var(--tint);
 }
 .prose blockquote {
   border-left: 3px solid var(--cyan);
   padding-left: 1em;
-  color: #fff;
+  color: var(--text);
 }
 .prose ul.contains-task-list {
   list-style: none;
@@ -335,6 +344,103 @@ p {
 .prose input[type="checkbox"] {
   margin-right: 0.5em;
   accent-color: var(--green);
+}
+
+
+/* ---------- Light sections ----------
+ * Add class="light" to a section. It re-points the color tokens, so every
+ * component inside flips to navy-on-off-white without its own light variant.
+ * WCAG contrast, measured on #F5F7FB (and on #FFFFFF):
+ *   --text #131620 16.8:1 | --text-muted #414a5e 8.3:1 | --text-subtle #5b6579 5.5:1
+ *   links/eyebrows #1845a9 8.0:1 | --green-light #047857 5.1:1
+ *   gradient headline #1845a9 > #04875f: weakest stop 4.2:1. Headlines are large
+ *   bold text, so AA needs 3:1. The brief's #07c98f end stop is only 2.0:1 on
+ *   off-white, so the light gradient ends on a darker green from the same family.
+ */
+.light {
+  --bg-raised: #ffffff;
+  --line: rgba(19, 22, 32, 0.1);
+  --line-strong: rgba(19, 22, 32, 0.18);
+  --text: #131620;
+  --text-muted: #414a5e;
+  --text-subtle: #5b6579;
+  --cyan: #1845a9;
+  --blue: #1845a9;
+  --green-light: #047857;
+  --gradient: linear-gradient(100deg, #1845a9 0%, #04875f 100%);
+  --tint: rgba(19, 22, 32, 0.04);
+  --serp-title: #1a0dab;
+  --star: #e8a200;
+  --map-a: #e6ebf3;
+  --map-b: #dde3ee;
+  background: var(--light-bg);
+  color: var(--text);
+}
+:root {
+  --light-bg: #f5f7fb;
+  --light-bg-alt: #ffffff;
+}
+.light.section-alt {
+  background: var(--light-bg-alt);
+}
+.light .card {
+  background: #ffffff;
+  border-color: var(--line);
+  box-shadow: 0 1px 2px rgba(19, 22, 32, 0.04), 0 8px 24px rgba(19, 22, 32, 0.06);
+}
+.light.section-alt .card {
+  background: var(--light-bg);
+  box-shadow: none;
+}
+.light.section-alt .gradient-border {
+  background:
+    linear-gradient(var(--light-bg), var(--light-bg)) padding-box,
+    var(--gradient) border-box;
+}
+.light .card-hover:hover {
+  border-color: rgba(24, 69, 169, 0.45);
+  box-shadow: 0 2px 4px rgba(19, 22, 32, 0.05), 0 14px 32px rgba(19, 22, 32, 0.1);
+}
+.light .gradient-border {
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    var(--gradient) border-box;
+}
+.light .btn-outline:hover {
+  border-color: rgba(19, 22, 32, 0.45);
+}
+/* Tailwind white utilities used by shared components, re-pointed to navy. */
+.light .text-white,
+.light .hover\:text-white:hover {
+  color: var(--text);
+}
+.light .text-white\/90,
+.light .text-white\/80 {
+  color: var(--text-muted);
+}
+.light .bg-white\/5,
+.light .bg-white\/10,
+.light .bg-white\/15,
+.light .bg-white\/20 {
+  background-color: var(--tint);
+}
+.light .border-white\/15 {
+  border-color: var(--line-strong);
+}
+.light .hover\:border-white\/40:hover {
+  border-color: rgba(19, 22, 32, 0.4);
+}
+.light .tag-draft {
+  background: #fef3c7;
+  color: #92400e;
+}
+/* Keep text white on solid colored chips inside light sections. */
+.light .on-color {
+  color: #ffffff;
+}
+.tag-draft {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fcd34d;
 }
 
 /* Hide horizontal scrollbar on swipe rows but keep them scrollable */
