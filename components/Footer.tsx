@@ -91,6 +91,7 @@ export default function Footer() {
         {/* Business info required for SMS (A2P 10DLC) registration */}
         <div className="mt-12 flex flex-col gap-4 border-t border-[var(--line)] pt-6 text-sm subtle md:flex-row md:items-center md:justify-between">
           <p>
+            {/* TODO(stefano): confirm the exact legal name for A2P. It comes from site.legalName. */}
             &copy; <CopyrightYear /> {site.legalName}. {site.location.city}, {site.location.region}.{" "}
             <a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a> ·{" "}
             <a href={`tel:${site.phone.tel}`} className="hover:text-white">{site.phone.display}</a>

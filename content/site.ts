@@ -5,6 +5,7 @@
 
 export const site = {
   brandName: "Booked Growth",
+  // TODO(stefano): confirm the exact registered legal name for A2P (must match your EIN/business registration).
   legalName: "Booked Growth LLC",
 
   // TODO(stefano): confirm the final production domain for this version of the site.
@@ -24,10 +25,9 @@ export const site = {
     greenLight: "#92f18f",
   },
 
-  // TODO(stefano): replace with the real business phone. 555-01xx numbers are reserved for fiction.
   phone: {
-    display: "(305) 555-0123",
-    tel: "+13055550123",
+    display: "+1 (786) 833-7314",
+    tel: "+17868337314",
   },
 
   email: "sbranca@bookedgrowth.net",

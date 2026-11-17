@@ -66,7 +66,7 @@ export const hvacFaqs: FaqItem[] = [
     todo: "Paid ads terms have a 6-month minimum. Stefano will decide how to word this answer.",
     answer: [
       // TODO(stefano): write this answer. Paid ads have a 6-month minimum; decide how to say it.
-      "We'll walk through the terms for each service on your free audit call, before you sign anything.",
+      "TODO(stefano): contract answer goes here.",
     ],
   },
   {
@@ -116,7 +116,7 @@ export const hvacFaqs: FaqItem[] = [
     services: ["paid-ads", "google-business-profile"],
     question: "What are Local Services Ads?",
     answer: [
-      "Local Services Ads are the ads at the very top of Google with a 'Google Guaranteed' or 'Google Screened' badge. You pay per lead, not per click.",
+      "Local Services Ads are the ads at the very top of Google with a blue 'Google Verified' badge. You pay per lead, not per click.",
       "Google checks your business license and insurance before you can run them. Your reviews and how fast you answer leads help decide how often you show up. Recent data shows HVAC LSA leads averaged about $51 each in Feb 2026, with 44% booking a job ([SearchLight via Enrich Labs](https://www.enrichlabs.ai/blog/hvac-marketing-complete-guide-2026)).",
     ],
   },

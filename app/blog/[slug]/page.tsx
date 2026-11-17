@@ -68,7 +68,14 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 border-y border-[var(--line)] py-4 text-sm subtle">
             <AuthorBox compact />
             <span>
-              <time dateTime={post.date}>{formatDate(post.date)}</time> · {post.readTime} min read
+              {post.date ? (
+                <>
+                  <time dateTime={post.date}>{formatDate(post.date)}</time> ·{" "}
+                </>
+              ) : (
+                "Draft, not yet published · "
+              )}
+              {post.readTime} min read
             </span>
           </div>
         </div>

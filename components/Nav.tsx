@@ -86,7 +86,7 @@ export default function Nav() {
     <div className="relative" onMouseEnter={() => enter(k)} onMouseLeave={leave}>
       <button
         type="button"
-        className={`flex items-center gap-1 py-2 text-[15px] font-medium transition-colors ${open === k || items.some((i) => isActive(i.href)) ? "text-white" : "text-[var(--text-muted)] hover:text-white"}`}
+        className={`flex items-center gap-1 whitespace-nowrap py-2 text-[14px] font-medium transition-colors xl:text-[15px] ${open === k || items.some((i) => isActive(i.href)) ? "text-white" : "text-[var(--text-muted)] hover:text-white"}`}
         aria-expanded={open === k}
         aria-controls={`menu-${k}`}
         onClick={() => setOpen(open === k ? null : k)}
@@ -132,7 +132,7 @@ export default function Nav() {
   }));
 
   const linkCls = (href: string) =>
-    `py-2 text-[15px] font-medium transition-colors ${isActive(href) ? "text-white" : "text-[var(--text-muted)] hover:text-white"}`;
+    `whitespace-nowrap py-2 text-[14px] font-medium transition-colors xl:text-[15px] ${isActive(href) ? "text-white" : "text-[var(--text-muted)] hover:text-white"}`;
 
   return (
     <header
@@ -150,13 +150,13 @@ export default function Nav() {
       <div className="mx-auto flex h-[var(--nav-h)] max-w-[1240px] items-center justify-between gap-3 px-[var(--gutter)]">
         <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={`${site.brandName} home`}>
           <Image src={site.logo.mark} alt="" width={41} height={24} priority className="h-6 w-auto" />
-          <span className="hidden min-[440px]:inline font-display font-extrabold text-[17px] tracking-tight text-white">
+          <span className="font-display font-extrabold text-[16px] tracking-tight text-white sm:text-[17px]">
             {site.brandName}
           </span>
         </Link>
 
         {/* Desktop */}
-        <nav aria-label="Main" className="hidden lg:flex items-center gap-6">
+        <nav aria-label="Main" className="hidden lg:flex items-center gap-3.5 xl:gap-6">
           {dropdown("services", "Services", services, true)}
           {pageLinks.map((l) => (
             <Link key={l.href} href={l.href} className={linkCls(l.href)}>
@@ -174,11 +174,11 @@ export default function Nav() {
         <div className="flex items-center gap-2">
           <a
             href={`tel:${site.phone.tel}`}
-            className="inline-flex h-10 items-center gap-2 rounded-[10px] px-2.5 text-[15px] font-semibold text-white hover:text-[var(--green-light)] xl:px-3"
+            className="hidden h-10 items-center gap-2 rounded-[10px] px-2 text-[15px] font-semibold text-white hover:text-[var(--green-light)] sm:inline-flex xl:px-3"
             aria-label={`Call ${site.phone.display}`}
           >
             <Icon name="phone" size={18} />
-            <span className="hidden xl:inline">{site.phone.display}</span>
+            <span className="hidden whitespace-nowrap lg:inline">{site.phone.display}</span>
           </a>
           <Link href={site.primaryCta.href} className="btn btn-primary btn-sm whitespace-nowrap">
             {site.primaryCta.shortLabel}

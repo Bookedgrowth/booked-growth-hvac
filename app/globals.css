@@ -27,6 +27,7 @@
   --tint: rgba(255, 255, 255, 0.04);
   --serp-title: #8ab4f8;
   --star: #fbbf24;
+  --verified: #8ab4f8;
   --map-a: #232a3d;
   --map-b: #20273a;
 
@@ -371,6 +372,7 @@ p {
   --tint: rgba(19, 22, 32, 0.04);
   --serp-title: #1a0dab;
   --star: #e8a200;
+  --verified: #1765cc;
   --map-a: #e6ebf3;
   --map-b: #dde3ee;
   background: var(--light-bg);

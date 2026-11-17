@@ -91,7 +91,7 @@ export function faqPageSchema(items: FaqItem[]) {
 export function articleSchema(post: {
   title: string;
   excerpt: string;
-  date: string;
+  date?: string;
   updated?: string;
   slug: string;
   image: string;
@@ -101,8 +101,8 @@ export function articleSchema(post: {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.updated ?? post.date,
+    // Drafts have no date yet; dates are added when a post is published.
+    ...(post.date ? { datePublished: post.date, dateModified: post.updated ?? post.date } : {}),
     image: absoluteUrl(post.image),
     url: absoluteUrl(`/blog/${post.slug}`),
     mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),

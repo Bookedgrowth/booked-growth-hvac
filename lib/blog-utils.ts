@@ -4,7 +4,8 @@ export type PostMeta = {
   title: string;
   seoTitle?: string;
   slug: string;
-  date: string;
+  /** Empty for drafts. Set the date in frontmatter when the post is published. */
+  date?: string;
   updated?: string;
   category: string;
   excerpt: string;

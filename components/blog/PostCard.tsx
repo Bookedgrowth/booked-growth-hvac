@@ -20,7 +20,7 @@ export default function PostCard({ post, featured = false }: { post: PostMeta; f
         </h3>
         <p className="mt-3 muted">{post.excerpt}</p>
         <p className="mt-auto pt-5 text-sm subtle">
-          {formatDate(post.date)} · {post.readTime} min read
+          {post.date ? `${formatDate(post.date)} · ` : ""}{post.readTime} min read
         </p>
       </div>
     </Link>

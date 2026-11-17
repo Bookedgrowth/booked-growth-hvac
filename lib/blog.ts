@@ -16,7 +16,7 @@ function parse(file: string): Post {
     title: data.title,
     seoTitle: data.seoTitle || undefined,
     slug: data.slug ?? file.replace(/\.mdx$/, ""),
-    date: data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date),
+    date: data.date ? (data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date)) : undefined,
     updated: data.updated ? String(data.updated) : undefined,
     category: data.category,
     excerpt: data.excerpt,
@@ -35,7 +35,8 @@ export function getAllPosts(): Post[] {
     .readdirSync(BLOG_DIR)
     .filter((f) => f.endsWith(".mdx"))
     .map(parse)
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
+    // Newest first. Undated drafts sort to the top, featured draft first.
+    .sort((a, b) => (b.date ?? "9999").localeCompare(a.date ?? "9999") || Number(b.featured ?? 0) - Number(a.featured ?? 0));
 }
 
 export function getPost(slug: string): Post | undefined {

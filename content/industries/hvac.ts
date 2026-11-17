@@ -96,7 +96,7 @@ export const hvac: IndustryContent = {
           bullets: [
             {
               title: "Google Local Services Ads (LSAs)",
-              body: "The boxes at the very top of Google with the green check mark. You pay per lead, not per click. Google checks your license and insurance first, and your reviews help decide where you show.",
+              body: "The boxes at the very top of Google with the blue 'Google Verified' check mark. You pay per lead, not per click. Google checks your license and insurance first, and your reviews help decide where you show.",
             },
             {
               title: "Google Search ads",
@@ -146,7 +146,7 @@ export const hvac: IndustryContent = {
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "Local Services Ads setup", body: "We handle the Google Guaranteed check, service list and lead disputes, so you only pay for real leads." },
+          { title: "Local Services Ads setup", body: "We handle the Google Verified check, service list and lead disputes, so you only pay for real leads." },
           { title: "Google Search campaigns", body: "Built around the searches that book jobs, with negative keywords that block the ones that don't." },
           { title: "Meta ads that build demand", body: "Tune-up and plan offers that keep your name in front of homeowners before something breaks." },
           { title: "Landing pages that convert", body: "Fast, phone-first pages with one job: get the homeowner to call or book." },

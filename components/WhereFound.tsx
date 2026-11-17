@@ -12,8 +12,14 @@ function Mock({ kind }: { kind: (typeof wf.cards)[number]["kind"] }) {
     case "lsa":
       return (
         <div>
-          <span className={`${tag} bg-[rgba(7,201,143,0.16)] text-[var(--green-light)]`}>
-            <span className="inline-flex items-center gap-1"><Icon name="shield" size={11} /> Google Guaranteed</span>
+          <span className={`${tag} bg-[rgba(26,115,232,0.1)] text-[var(--verified)]`}>
+            <span className="inline-flex items-center gap-1">
+              <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="11" fill="#1a73e8" />
+                <path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Google Verified
+            </span>
           </span>
           <p className="mt-2 text-[14px] font-bold text-white">{name}</p>
           <p className="text-[12px] text-[var(--star)]">★★★★★ <span className="text-[var(--text-subtle)]">(your reviews)</span></p>
