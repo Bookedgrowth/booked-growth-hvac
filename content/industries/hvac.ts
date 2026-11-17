@@ -821,7 +821,7 @@ export const hvac: IndustryContent = {
     fields: [
       { kind: "text", name: "full_name", label: "Full Name", placeholder: "John Smith", required: true, autoComplete: "name" },
       { kind: "email", name: "email", label: "Email", placeholder: "john@yourcompany.com", required: true, autoComplete: "email" },
-      { kind: "tel", name: "phone", label: "Phone", placeholder: "(305) 555-0100", required: true, autoComplete: "tel" },
+      { kind: "tel", name: "phone", label: "Phone", placeholder: "Best number to reach you", required: true, autoComplete: "tel" },
       { kind: "text", name: "company_name", label: "Company Name", placeholder: "Your Company Heating & Air", required: true, autoComplete: "organization" },
       { kind: "url", name: "website_url", label: "Website URL", placeholder: "yourcompany.com (optional)", autoComplete: "url", wide: true },
       {
