@@ -31,14 +31,14 @@ export function SampleAudit() {
         </div>
 
         <figure className="overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_1px_2px_rgba(19,22,32,0.04),0_16px_40px_rgba(19,22,32,0.1)]">
-          <figcaption className="flex flex-wrap items-center justify-between gap-3 bg-[var(--bg)] px-5 py-4 text-white">
+          <figcaption className="flex flex-wrap items-center justify-between gap-3 bg-[var(--bg)] px-5 py-4 on-color">
             <span>
               <span className="block text-[12px] font-bold uppercase tracking-[0.14em] text-[#b4bdd0]">Online audit report</span>
               <span className="block font-display text-[17px] font-bold">
                 {a.company} <span className="text-[13px] font-medium text-[#b4bdd0]">({a.companyNote})</span>
               </span>
             </span>
-            <span className="rounded-full border border-white/25 px-3 py-1 text-[12px] font-semibold text-white">{a.label}</span>
+            <span className="rounded-full border border-white/25 px-3 py-1 text-[12px] font-semibold on-color">{a.label}</span>
           </figcaption>
           <ol className="divide-y divide-[var(--line)]">
             {a.findings.map((f) => (
