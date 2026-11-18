@@ -3,7 +3,8 @@
  * (plus hvac-faq.ts for questions and content/blog for posts).
  *
  * Rules: no em dashes, no pricing, no testimonials or client names, no stats
- * without a source in `stats`. Reading level: 6th to 8th grade.
+ * without a source in `stats`. Voice: clear and professional, written for owners
+ * running multi-truck, multi-million-dollar operations. Plain, never dumbed down.
  * **Double asterisks** mark the gradient words in a headline.
  */
 
@@ -61,9 +62,9 @@ export const hvac: IndustryContent = {
       slug: "paid-ads",
       featured: true,
       navLabel: "Google Ads, LSAs & Meta",
-      navDesc: "Get the call the moment they search",
+      navDesc: "Win the call the moment homeowners search",
       cardTitle: "Google & Meta Ads",
-      cardBlurb: "Show up the moment someone searches 'AC repair near me.'",
+      cardBlurb: "Capture high-intent demand the moment homeowners search, with every campaign tracked to cost per booked job.",
       schemaServiceType: "HVAC pay-per-click advertising",
       schemaDescription:
         "Google Search ads, Google Local Services Ads and Meta ads for HVAC and plumbing companies, tracked to cost per booked job.",
@@ -71,40 +72,40 @@ export const hvac: IndustryContent = {
       meta: {
         title: "HVAC Google Ads, LSAs and Meta Ads | Booked Growth",
         description:
-          "HVAC Google Ads, Local Services Ads and Meta ads built to book jobs, not clicks. We track cost per booked job and set budgets that follow the weather.",
+          "HVAC Google Ads, Local Services Ads and Meta ads built to book jobs, not clicks. Every campaign is tracked to cost per booked job and tuned to the season.",
       },
       hero: {
         eyebrow: "HVAC Google Ads, LSAs & Meta Ads",
         h1: "Get the Call Before **Your Competitor Does.**",
-        sub: "When a homeowner's AC quits, they search, tap and call within minutes. We put your company at the top of that search and track every call back to the ad that made it ring.",
+        sub: "When a homeowner's AC fails, the decision happens in minutes: search, tap, call. We put your company at the top of that search and attribute every call to the campaign that produced it.",
       },
       problem: {
         h2: "Ads That Get Clicks Are Easy. **Ads That Book Jobs** Are Not.",
         body: [
-          "Most HVAC owners have tried ads. The clicks came in. The bill came in. The booked jobs? Hard to say.",
-          "That happens when ads run without a plan. They show for the wrong searches. They send people to a page that doesn't load fast on a phone. And nobody checks which calls turned into jobs.",
-          "We fix the plan first, then turn on the spend.",
+          "Most HVAC owners have run ads before. The clicks came in and the invoices came in, but the booked jobs were hard to pin down.",
+          "That's what spend without a strategy looks like: ads triggered by the wrong searches, traffic sent to pages that load slowly on a phone, and no one tracking which calls became revenue.",
+          "We build the strategy first, then scale the spend.",
         ],
       },
       extraSections: [
         {
-          eyebrow: "Three ad types, in plain words",
+          eyebrow: "Three channels, three roles",
           h2: "Where Your Ads **Show Up.**",
           body: [
-            "There are three kinds of ads that matter for HVAC and plumbing. Each one catches homeowners at a different moment.",
+            "Three ad platforms matter for HVAC and plumbing. Each one reaches homeowners at a different point in the buying decision.",
           ],
           bullets: [
             {
               title: "Google Local Services Ads (LSAs)",
-              body: "The boxes at the very top of Google with the blue 'Google Verified' check mark. You pay per lead, not per click. Google checks your license and insurance first, and your reviews help decide where you show.",
+              body: "The listings at the very top of Google with the blue 'Google Verified' check mark. You pay per lead, not per click. Google verifies your license and insurance up front, and your reviews and responsiveness influence your placement.",
             },
             {
               title: "Google Search ads",
-              body: "The text ads right under the LSAs. You pick the searches you want, like 'AC repair near me' or 'water heater install.' We write the ads and send people to a page built to make them call.",
+              body: "The text ads directly below the LSAs. We target the searches that produce jobs, such as 'AC repair near me' or 'water heater installation,' write the ads and send traffic to a page built to convert.",
             },
             {
               title: "Meta ads (Facebook and Instagram)",
-              body: "People aren't searching here, so these ads work differently. They keep your name in front of local homeowners before they need you, and they work well for tune-up and maintenance plan offers.",
+              body: "No one is searching on Facebook or Instagram, so these ads play a different role. They build familiarity with local homeowners before they need service, and they perform well for tune-up and maintenance plan offers.",
             },
           ],
         },
@@ -112,8 +113,8 @@ export const hvac: IndustryContent = {
           eyebrow: "What leads cost",
           h2: "Know the Numbers **Before You Spend.**",
           body: [
-            "Lead costs swing by city, season and competition. Here is what recent HVAC data shows, so you can see why we usually start with Local Services Ads.",
-            "We'll show you real numbers for your market on the free audit.",
+            "Lead costs vary by market, season and competition. Recent HVAC benchmarks show why we usually lead with Local Services Ads.",
+            "On the free audit, we'll walk you through the numbers for your market.",
           ],
           statIds: ["lsa-cost", "search-cost"],
         },
@@ -121,45 +122,45 @@ export const hvac: IndustryContent = {
           eyebrow: "Our readiness approach",
           h2: "Foundation First. **Then the Gas.**",
           body: [
-            "Ads make a weak setup fail faster. If your Google profile has 12 reviews and your site takes 8 seconds to load, paid traffic just leaks out.",
-            "So before we spend a dollar of your budget, we make sure three things are ready: a strong Google Business Profile, a fast site with tap-to-call on every page, and call tracking that works.",
-            "If something isn't ready, we tell you on the audit and fix it first.",
+            "Paid traffic exposes a weak foundation quickly. If your Google profile has 12 reviews and your site takes 8 seconds to load, ad spend leaks out before it produces a call.",
+            "Before we spend any of your budget, we confirm three things are in place: a strong Google Business Profile, a fast site with click-to-call on every page, and working call tracking.",
+            "If any of those falls short, we flag it on the audit and fix it first.",
           ],
         },
         {
           eyebrow: "How we measure",
           h2: "We Track **Booked Jobs,** Not Clicks.",
           body: [
-            "Clicks don't pay your techs. Booked jobs do. Every ad gets its own tracking number, and every form is tagged by source.",
-            "Each month you see how many calls came in, how many turned into booked jobs, and what each booked job cost. If a campaign isn't booking jobs, we change it or cut it.",
+            "Clicks don't cover payroll. Booked jobs do. Every campaign gets its own tracking number, and every form submission is tagged by source.",
+            "Each month you see calls, booked jobs and cost per booked job, broken down by campaign. Campaigns that don't produce jobs get restructured or cut.",
           ],
         },
         {
           eyebrow: "Seasonality",
           h2: "Budgets That **Follow the Weather.**",
           body: [
-            "HVAC demand isn't flat. The first hot week brings a flood of AC calls. Mild weeks go quiet.",
-            "We plan for that. We push spend up when the heat hits and pull it back when calls slow down. In slow months we shift to tune-ups, maintenance plans and replacement offers, so your board stays full all year.",
+            "HVAC demand isn't flat. The first heat wave floods the phones with AC calls, and mild weeks go quiet.",
+            "We plan around that cycle, increasing spend when demand spikes and pulling back when it softens. In the off-season we shift budget toward tune-ups, maintenance plans and replacement offers to keep the schedule full year-round.",
           ],
         },
       ],
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "Local Services Ads setup", body: "We handle the Google Verified check, service list and lead disputes, so you only pay for real leads." },
-          { title: "Google Search campaigns", body: "Built around the searches that book jobs, with negative keywords that block the ones that don't." },
-          { title: "Meta ads that build demand", body: "Tune-up and plan offers that keep your name in front of homeowners before something breaks." },
-          { title: "Landing pages that convert", body: "Fast, phone-first pages with one job: get the homeowner to call or book." },
-          { title: "Call tracking on every ad", body: "You'll know which ad made the phone ring and which calls turned into jobs." },
-          { title: "A monthly plain-English report", body: "Calls, booked jobs and cost per booked job. No jargon, no vanity numbers." },
+          { title: "Local Services Ads management", body: "We manage Google verification, service categories and lead disputes, so you pay only for legitimate leads." },
+          { title: "Google Search campaigns", body: "Structured around the searches that book jobs, with negative keywords that filter out the ones that don't." },
+          { title: "Meta ads that build demand", body: "Tune-up and maintenance plan offers that keep your brand in front of homeowners before they need service." },
+          { title: "Landing pages that convert", body: "Fast, mobile-first pages with a single goal: a call or a booking." },
+          { title: "Call tracking on every campaign", body: "See which campaign drove each call and which calls became booked jobs." },
+          { title: "Clear monthly reporting", body: "Calls, booked jobs and cost per booked job. No jargon, no vanity metrics." },
         ],
       },
       steps: {
         h2: "How Paid Ads **Work With Us.**",
         items: [
-          { title: "Check readiness", body: "We review your Google profile, site and tracking. Anything weak gets fixed before ads go live." },
-          { title: "Launch the right mix", body: "Usually Local Services Ads first, then Google Search, then Meta once calls are flowing." },
-          { title: "Tune every month", body: "We cut what doesn't book jobs, add budget to what does, and adjust for the season." },
+          { title: "Confirm readiness", body: "We review your Google profile, website and tracking, and close any gaps before launch." },
+          { title: "Launch the right mix", body: "Typically Local Services Ads first, then Google Search, then Meta once call volume is established." },
+          { title: "Optimize monthly", body: "We cut what doesn't book jobs, reallocate budget to what does and adjust for the season." },
         ],
       },
       guarantee: "paidAds",
@@ -169,9 +170,9 @@ export const hvac: IndustryContent = {
     {
       slug: "website-design",
       navLabel: "Website Design",
-      navDesc: "A site that makes the phone ring",
+      navDesc: "A site engineered to produce calls",
       cardTitle: "Website Design",
-      cardBlurb: "A site that makes the phone ring, not just looks nice.",
+      cardBlurb: "A fast, mobile-first site engineered to produce calls, not just impressions.",
       schemaServiceType: "HVAC website design",
       schemaDescription:
         "Mobile-first websites for HVAC and plumbing companies with tap-to-call, service and city pages, and online booking.",
@@ -184,38 +185,38 @@ export const hvac: IndustryContent = {
       hero: {
         eyebrow: "HVAC website design",
         h1: "A Website That **Makes the Phone Ring.**",
-        sub: "Homeowners judge your company in seconds, usually on a phone, often with no AC. We build HVAC sites that load fast, earn trust and make calling you the easy next step.",
+        sub: "Homeowners size up your company in seconds, usually on a phone and often with a failed system. We build HVAC websites that load fast, establish credibility and make calling you the obvious next step.",
       },
       problem: {
         h2: "Pretty Sites **Don't Pay** the Bills.",
         body: [
-          "A lot of contractor sites look fine on a laptop. On a phone, the number is hard to find, the pages load slow and there's no clear next step.",
+          "Many contractor sites look fine on a desktop. On a phone, the number is hard to find, pages load slowly and there's no clear next step.",
           "A homeowner with a broken AC won't wait. They hit back and call the next company.",
-          "Your website should work like your best CSR: answer the big questions fast and get them on the phone.",
+          "Your website should perform like your best CSR: answer the key questions quickly and get the customer on the phone.",
         ],
       },
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "Phone-first design", body: "Built for the screen your customers use most, then scaled up for desktop." },
-          { title: "Tap-to-call everywhere", body: "Your number sits in the header and a sticky call button follows the visitor down the page." },
-          { title: "Service and city pages", body: "A page for each service and each area you serve, so you show up where you work." },
-          { title: "Online booking or text-to-book", body: "For homeowners who would rather tap a time than make a call." },
-          { title: "Trust built in", body: "Space for your reviews, licenses, warranties, financing and team photos." },
-          { title: "Tracking from day one", body: "Call and form tracking, so you know what the site brings in." },
+          { title: "Mobile-first design", body: "Designed for the device most of your customers use, then scaled up for desktop." },
+          { title: "Click-to-call on every page", body: "Your number sits in the header, with a sticky call button that follows visitors down the page." },
+          { title: "Service and city pages", body: "Dedicated pages for each service line and market, so you rank where you operate." },
+          { title: "Online booking or text-to-book", body: "For homeowners who would rather pick a time slot than make a call." },
+          { title: "Credibility built in", body: "Dedicated space for reviews, licenses, warranties, financing and team photos." },
+          { title: "Tracking from day one", body: "Call and form tracking from launch, so you know exactly what the site produces." },
         ],
       },
       steps: {
         h2: "How Your **Site Gets Built.**",
         items: [
-          { title: "Week 1: Gather", body: "You send your logo, photos, services and service area. We handle the rest." },
-          { title: "Weeks 2 to 3: Build", body: "We write the copy, design the pages and set up tracking." },
-          { title: "Week 4: Review and launch", body: "You review, we polish, and your new site goes live." },
+          { title: "Week 1: Onboarding", body: "You provide your logo, photos, services and service area. We handle everything else." },
+          { title: "Weeks 2 to 3: Build", body: "We write the copy, design the pages and configure tracking." },
+          { title: "Week 4: Review and launch", body: "You review, we refine, and the new site goes live." },
         ],
       },
       samplesBlock: {
         h2: "See Sample **HVAC Sites.**",
-        body: "We built sample HVAC sites to show what's possible. Yours would use your logo, colors, photos and service area.",
+        body: "We built sample HVAC sites to show what's possible. Yours would carry your branding, photos and service area.",
         ctaLabel: "See sample HVAC sites",
       },
       guarantee: "websiteDesign",
@@ -225,9 +226,9 @@ export const hvac: IndustryContent = {
     {
       slug: "google-business-profile",
       navLabel: "Google Business Profile",
-      navDesc: "Win the Maps pack where you work",
+      navDesc: "Rank in the Maps pack where you operate",
       cardTitle: "Google Business Profile",
-      cardBlurb: "Win the Maps pack in the neighborhoods you serve.",
+      cardBlurb: "Rank in the Maps pack across every neighborhood you service.",
       schemaServiceType: "Google Business Profile optimization",
       schemaDescription:
         "Google Business Profile setup, optimization and review growth for HVAC and plumbing companies.",
@@ -240,32 +241,32 @@ export const hvac: IndustryContent = {
       hero: {
         eyebrow: "Google Business Profile for HVAC",
         h1: "Own the Map in **Your Service Area.**",
-        sub: "When homeowners search 'AC repair near me,' Google shows a map with three companies. Your Google Business Profile decides if you're one of them.",
+        sub: "When homeowners search 'AC repair near me,' Google shows a map with three companies. Your Google Business Profile determines whether you're one of them.",
       },
       problem: {
         h2: "If You're Not in the **Top Three,** You're Invisible.",
         body: [
-          "Most homeowners never scroll past the map. They see three companies, check the stars and call one.",
-          "A half-filled profile with old photos and a few reviews won't make that list, even if you've served the area for 20 years.",
-          "The fix isn't magic. It's a complete, active profile and a steady flow of real reviews.",
+          "Most homeowners never scroll past the map. They compare three companies, check the ratings and call one.",
+          "An incomplete profile with outdated photos and a handful of reviews won't make that list, even after 20 years in the area.",
+          "The fix isn't complicated: a complete, active profile and a consistent flow of genuine reviews.",
         ],
       },
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "Full profile setup", body: "Categories, services, service areas, hours and business details, all filled in the right way." },
-          { title: "Photos that build trust", body: "We guide you on the photos that matter: your team, your trucks and real jobs." },
-          { title: "A simple review system", body: "An easy way to ask every happy customer for a review, right after the job." },
-          { title: "Weekly posts", body: "Short updates and offers that keep your profile active." },
-          { title: "Ready for Local Services Ads", body: "Your profile and reviews feed into LSAs, so this sets up your ads to win too." },
+          { title: "Full profile optimization", body: "Categories, services, service areas, hours and business details, configured correctly." },
+          { title: "Photos that build trust", body: "Guidance on the photos that convert: your team, your trucks and real jobs." },
+          { title: "A review generation system", body: "A frictionless way to request a review from every satisfied customer, right after the job." },
+          { title: "Weekly posts", body: "Updates and offers that keep your profile active and relevant." },
+          { title: "Ready for Local Services Ads", body: "Your profile and reviews feed directly into LSAs, so this work strengthens your ads too." },
         ],
       },
       steps: {
         h2: "How We **Build Your Profile.**",
         items: [
-          { title: "Audit", body: "We check what's missing, what's wrong and how you compare to the top three." },
-          { title: "Fix and fill", body: "We complete every section and set up your review requests." },
-          { title: "Keep it active", body: "Posts, photos and review replies, every month." },
+          { title: "Audit", body: "We identify what's missing or misconfigured and benchmark you against the top three." },
+          { title: "Optimize", body: "We complete every section and launch your review requests." },
+          { title: "Maintain momentum", body: "Posts, photos and review responses, every month." },
         ],
       },
       guarantee: "googleBusinessProfile",
@@ -277,7 +278,7 @@ export const hvac: IndustryContent = {
       navLabel: "Local SEO",
       navDesc: "Rank in every city you serve",
       cardTitle: "Local SEO",
-      cardBlurb: "A page for every service and city, so you rank where you work.",
+      cardBlurb: "Service and city pages that compound into lower-cost organic leads.",
       schemaServiceType: "HVAC local SEO",
       schemaDescription:
         "Local SEO for HVAC and plumbing companies: service pages, city pages, citations and on-page optimization.",
@@ -285,36 +286,36 @@ export const hvac: IndustryContent = {
       meta: {
         title: "HVAC Local SEO: Rank Where You Work | Booked Growth",
         description:
-          "HVAC local SEO with a page for every service and every city you serve. Rank in Google for the jobs you want, in the areas you actually drive to.",
+          "HVAC local SEO with a dedicated page for every service and city you serve. Rank in Google for the jobs you want, in the markets you actually work.",
       },
       hero: {
         eyebrow: "Local SEO for HVAC",
         h1: "Rank Where **You Actually Work.**",
-        sub: "You serve a dozen cities. Your website probably talks about one. Local SEO gives Google a clear page for each service and each area, so you show up in all of them.",
+        sub: "You serve a dozen cities, but your website likely targets one. Local SEO gives Google a dedicated page for each service and each market, so you can rank in all of them.",
       },
       problem: {
         h2: "One Page **Can't Rank** Everywhere.",
         body: [
           "Most HVAC sites have one 'Services' page and one 'Areas We Serve' list. Google can't rank that page for 'AC repair in Hialeah' and 'water heater install in Doral' at the same time.",
-          "Your competitors who rank have a page for each. That's the gap.",
+          "The competitors outranking you have a dedicated page for each. That's the gap we close.",
         ],
       },
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "Service pages", body: "A real page for AC repair, installs, heating, maintenance, plumbing and more." },
-          { title: "City pages", body: "Useful pages for each area you serve, not copy-and-paste filler." },
-          { title: "On-page fixes", body: "Titles, headings, speed and schema, done right on every page." },
-          { title: "Citations", body: "Your name, address and phone listed the same way across key directories." },
-          { title: "Monthly ranking report", body: "Where you rank, what changed and what we're doing next." },
+          { title: "Service pages", body: "Dedicated pages for AC repair, installation, heating, maintenance, plumbing and more." },
+          { title: "City pages", body: "Substantive pages for each market you serve, not duplicated filler." },
+          { title: "On-page optimization", body: "Titles, headings, page speed and structured data, optimized on every page." },
+          { title: "Citations", body: "A consistent name, address and phone number across the directories that matter." },
+          { title: "Monthly ranking report", body: "Where you rank, what changed and what comes next." },
         ],
       },
       steps: {
         h2: "How Local SEO **Works With Us.**",
         items: [
-          { title: "Map your market", body: "We list your services and cities and see what homeowners search for in each." },
-          { title: "Build the pages", body: "Service pages first, then city pages, in order of what brings the most jobs." },
-          { title: "Grow and adjust", body: "We track rankings and calls, then add or improve pages every month." },
+          { title: "Map your market", body: "We map your services and cities against what homeowners actually search in each market." },
+          { title: "Build the pages", body: "Service pages first, then city pages, prioritized by revenue potential." },
+          { title: "Expand and refine", body: "We track rankings and calls, then add and improve pages every month." },
         ],
       },
       related: ["website-design", "ai-search-visibility"],
@@ -325,7 +326,7 @@ export const hvac: IndustryContent = {
       navLabel: "AI Search Visibility",
       navDesc: "Get named by ChatGPT and Google AI",
       cardTitle: "AI Search Visibility",
-      cardBlurb: "Get recommended when homeowners ask ChatGPT who to call.",
+      cardBlurb: "Be the company ChatGPT and Google AI recommend when homeowners ask who to call.",
       schemaServiceType: "AI search optimization",
       schemaDescription:
         "AI search visibility for HVAC and plumbing companies, so ChatGPT, Google AI Overviews and Perplexity can find and recommend them.",
@@ -338,30 +339,30 @@ export const hvac: IndustryContent = {
       hero: {
         eyebrow: "AI search visibility for HVAC",
         h1: "Be the Company **AI Recommends.**",
-        sub: "Some homeowners now skip the search bar and ask ChatGPT or Google's AI, 'Who's a good AC company near me?' We help make sure your name is in the answer.",
+        sub: "Some homeowners now skip the search bar and ask ChatGPT or Google's AI, 'Who's a good AC company near me?' We position your company to be in that answer.",
       },
       problem: {
         h2: "AI Can't Recommend **What It Can't Read.**",
         body: [
           "AI tools build their answers from what they find online: your website, your Google profile, your reviews and what other sites say about you.",
-          "If your site is thin, your info doesn't match across the web, or your services are hard to find, AI tools skip you and name someone else.",
+          "If your site is thin, your information is inconsistent across the web or your services are hard to identify, AI tools pass over you and recommend someone else.",
         ],
       },
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "Clear, quotable pages", body: "Service pages and FAQs written so AI tools can pull a direct answer." },
-          { title: "Structured data", body: "Behind-the-scenes code that tells search engines and AI exactly who you are and what you do." },
-          { title: "Matching info everywhere", body: "Your name, services and areas listed the same way across the web." },
-          { title: "AI answer checks", body: "We test the questions homeowners ask in ChatGPT, Google AI and Perplexity and track if you show up." },
+          { title: "Clear, quotable pages", body: "Service pages and FAQs structured so AI tools can extract a direct answer." },
+          { title: "Structured data", body: "Schema markup that tells search engines and AI exactly who you are, what you do and where." },
+          { title: "Consistent information everywhere", body: "Your name, services and service areas presented identically across the web." },
+          { title: "AI answer monitoring", body: "We test the questions homeowners ask in ChatGPT, Google AI and Perplexity and track whether you're named." },
         ],
       },
       steps: {
         h2: "How AI Visibility **Works With Us.**",
         items: [
-          { title: "Test the answers", body: "We ask AI tools the questions your customers ask and see who gets named." },
-          { title: "Fill the gaps", body: "We fix your pages, profile and listings so the facts about you are clear and consistent." },
-          { title: "Check every month", body: "AI answers change. We re-test and keep improving." },
+          { title: "Test the answers", body: "We run the questions your customers ask through AI tools and record who gets recommended." },
+          { title: "Close the gaps", body: "We strengthen your pages, profile and listings so the facts about your company are clear and consistent." },
+          { title: "Re-test monthly", body: "AI answers shift over time. We re-test every month and keep improving." },
         ],
       },
       related: ["seo", "google-business-profile"],
@@ -372,7 +373,7 @@ export const hvac: IndustryContent = {
       navLabel: "Social Media",
       navDesc: "Stay top of mind between calls",
       cardTitle: "Social Media",
-      cardBlurb: "Stay top of mind between breakdowns.",
+      cardBlurb: "A consistent brand presence that supports referrals, reviews and ad performance.",
       schemaServiceType: "Social media management",
       schemaDescription:
         "Social media content and management for HVAC and plumbing companies on Facebook, Instagram and Google.",
@@ -380,35 +381,35 @@ export const hvac: IndustryContent = {
       meta: {
         title: "Social Media for HVAC Companies | Booked Growth",
         description:
-          "Simple, steady social media for HVAC companies. Real jobs, real techs and seasonal tips that keep homeowners thinking of you before something breaks.",
+          "Consistent social media for HVAC companies: real jobs, real techs and seasonal tips that keep your brand top of mind before homeowners need service.",
       },
       hero: {
         eyebrow: "Social media for HVAC",
         h1: "Stay Top of Mind **Between Breakdowns.**",
-        sub: "A homeowner might need you once or twice a year. Social media keeps your name familiar the rest of the time, so you're the first call when the AC quits.",
+        sub: "A homeowner may need you once or twice a year. Social media keeps your brand familiar in between, so you're the first call when the system fails.",
       },
       problem: {
         h2: "Silent Pages **Lose Trust.**",
         body: [
-          "Homeowners check you out before they call. If your last Facebook post is from 2022, it makes them wonder if you're still around.",
-          "You don't need viral videos. You need a steady, real presence that shows your team doing good work.",
+          "Homeowners vet you before they call. If your last Facebook post is from 2022, they start to wonder whether you're still in business.",
+          "You don't need viral videos. You need a consistent, credible presence that shows your team doing quality work.",
         ],
       },
       deliverables: {
         h2: "What You **Get.**",
         items: [
-          { title: "A monthly content plan", body: "Seasonal tips, job photos, team intros and offers, planned ahead." },
-          { title: "Posts written for you", body: "We write and schedule every post. You just send photos from the field." },
-          { title: "Facebook, Instagram and Google", body: "Your profiles kept active and looking the same everywhere." },
-          { title: "Ready for ads", body: "An active page makes your Meta ads look more trustworthy." },
+          { title: "A monthly content plan", body: "Seasonal tips, job photos, team features and offers, planned in advance." },
+          { title: "Posts written for you", body: "We write and schedule every post. Your team just sends photos from the field." },
+          { title: "Facebook, Instagram and Google", body: "Your profiles kept active and consistent across every platform." },
+          { title: "Ready for ads", body: "An active page lends credibility to your Meta ads." },
         ],
       },
       steps: {
         h2: "How Social **Works With Us.**",
         items: [
-          { title: "Plan", body: "We build a simple monthly calendar around your season and offers." },
-          { title: "Create", body: "You snap photos on the job. We turn them into posts." },
-          { title: "Post and review", body: "We publish on schedule and share what's working each month." },
+          { title: "Plan", body: "We build a monthly content calendar around your season and offers." },
+          { title: "Create", body: "Your techs capture photos on the job. We turn them into posts." },
+          { title: "Publish and report", body: "We publish on schedule and report on what's performing each month." },
         ],
       },
       related: ["paid-ads", "google-business-profile"],
@@ -645,7 +646,7 @@ export const hvac: IndustryContent = {
     hero: {
       eyebrow: "How it works",
       h1: "Our HVAC Marketing Process, **Step by Step.**",
-      sub: "No black box. Here is exactly what happens, what we need from you and when things go live.",
+      sub: "No black box. Here's exactly what happens, what we need from you and when each piece goes live.",
     },
     // TODO(stefano): confirm these timelines match how you want to run onboarding.
     phases: [
@@ -653,20 +654,20 @@ export const hvac: IndustryContent = {
         label: "Step 1",
         timing: "30 minutes",
         title: "The free audit",
-        body: "A video call where we show you how homeowners find you today and where you're losing calls.",
+        body: "A video call where we walk through how homeowners find you today and where calls are slipping away.",
         checklist: [
           "Your Google Business Profile: categories, reviews, photos and Maps ranking",
-          "Your website: speed on a phone, tap-to-call, service and city pages",
-          "Your ads, if you run them: what you pay and what you get back",
-          "Your top competitors and why they show up above you",
-          "A short list of what to fix first",
+          "Your website: mobile speed, click-to-call, service and city pages",
+          "Your ad accounts, if you run ads: what you spend and what it returns",
+          "Your top competitors and why they rank above you",
+          "A prioritized list of what to fix first",
         ],
       },
       {
         label: "Step 2",
         timing: "Week 1",
         title: "Onboarding",
-        body: "We collect what we need in one week. That's what lets us promise a live site in 30 days.",
+        body: "We gather everything we need in the first week. That's what allows us to commit to a live site in 30 days.",
         checklist: [
           "Logo and brand colors",
           "Photos of your team, trucks and real jobs",
@@ -679,7 +680,7 @@ export const hvac: IndustryContent = {
         label: "Step 3",
         timing: "Weeks 2 to 3",
         title: "The build",
-        body: "We write the copy, design the site and fix your Google profile. You get a preview link to review.",
+        body: "We write the copy, design the site and optimize your Google profile. You get a preview link to review.",
         checklist: [
           "Website copy and design",
           "Service pages and city pages",
@@ -692,19 +693,19 @@ export const hvac: IndustryContent = {
         label: "Step 4",
         timing: "Week 4",
         title: "Launch",
-        body: "Your site goes live. We test every call button and form, then submit it to Google.",
+        body: "Your site goes live. We test every call button and form, then submit the site to Google.",
         checklist: [
           "Final review with you",
           "Live on your domain",
           "Tracking tested end to end",
-          "Ads planned, once the foundation is ready",
+          "Ad launch planned once the foundation is ready",
         ],
       },
       {
         label: "Step 5",
         timing: "Every month",
         title: "Reporting and tuning",
-        body: "A short report in plain English, plus a call if you want one. We keep improving what works.",
+        body: "A concise monthly report and an optional review call. We keep refining what's working.",
         checklist: [
           "Calls and form leads, by source",
           "Booked jobs",
@@ -715,11 +716,11 @@ export const hvac: IndustryContent = {
     ],
     reporting: {
       h2: "What You'll See **Every Month.**",
-      body: "Three numbers matter most. Everything in your report ties back to them.",
+      body: "Three numbers matter most, and everything in your report ties back to them.",
       metrics: [
-        { title: "Calls", body: "How many calls and form leads came in, and from where." },
-        { title: "Booked jobs", body: "How many of those leads turned into real work on your board." },
-        { title: "Cost per lead", body: "What each lead cost, so you know if the spend is worth it." },
+        { title: "Calls", body: "Call and form lead volume, broken down by source." },
+        { title: "Booked jobs", body: "How many of those leads became revenue on your schedule." },
+        { title: "Cost per lead", body: "What each lead cost, so you can judge the return on your spend." },
       ],
     },
     noSurprises: {
@@ -748,37 +749,37 @@ export const hvac: IndustryContent = {
       eyebrow: "Why we exist",
       h2: "Good Contractors Shouldn't Lose Jobs to **Louder Ones.**",
       body: [
-        "When a homeowner's AC quits, they don't research who does the best work. They pick whoever shows up first and looks the most trustworthy.",
-        "So good companies lose jobs every day to competitors with louder ads and better websites, not better techs.",
-        "We exist to close that gap. We help good HVAC and plumbing companies get found first, look the part and turn more calls into booked jobs.",
+        "When a homeowner's AC fails, they don't research who does the best work. They choose whoever appears first and looks the most credible.",
+        "As a result, good companies lose jobs every day to competitors with louder ads and better websites, not better technicians.",
+        "We exist to close that gap: helping strong HVAC and plumbing companies get found first, present themselves professionally and convert more calls into booked jobs.",
       ],
     },
     principles: {
       h2: "What We **Stand For.**",
       items: [
         { icon: "home", title: "You own everything", body: "Your website, domain, Google profile and ad accounts stay in your name. Always." },
-        { icon: "chart", title: "Booked jobs, not clicks", body: "We report calls, booked jobs and cost per lead. Not vanity numbers." },
-        { icon: "shield", title: "Foundation before ads", body: "We don't spend your money on ads until your profile and site are ready to turn clicks into calls." },
-        { icon: "mail", title: "Plain-English reporting", body: "One clear monthly report. No jargon, no 40-page decks." },
+        { icon: "chart", title: "Booked jobs, not clicks", body: "We report calls, booked jobs and cost per lead. No vanity metrics." },
+        { icon: "shield", title: "Foundation before ads", body: "We don't put your budget into ads until your profile and site are ready to convert clicks into calls." },
+        { icon: "mail", title: "Clear reporting", body: "One concise monthly report. No jargon, no 40-page decks." },
         // TODO(stefano): add your response-time promise here (for example, "a reply within one business day").
-        { icon: "chat", title: "Fast answers", body: "Questions get a clear, direct answer from someone who knows your account." },
-        { icon: "check", title: "Honest guarantees", body: "Simple promises with no fine print. [See our guarantees](/#guarantees)." },
+        { icon: "chat", title: "Fast answers", body: "Questions get a direct answer from someone who knows your account." },
+        { icon: "check", title: "Honest guarantees", body: "Clear commitments with no fine print. [See our guarantees](/#guarantees)." },
       ],
     },
     whyOnly: {
       h2: "Why HVAC and **Plumbing Only.**",
       body: [
-        "When you serve one kind of business, you learn it deeply. We know the seasons, the searches, the jobs that pay and the ones that don't.",
-        "HVAC and plumbing are urgent. When something breaks, homeowners need help now, and the company that shows up first usually gets the job. That's exactly where good marketing makes the biggest difference.",
+        "Serving one industry means knowing it deeply: the seasons, the searches, the jobs that drive margin and the ones that don't.",
+        "HVAC and plumbing are urgent purchases. When something breaks, homeowners need help now, and the first credible company usually wins the job. That's where strong marketing has the greatest impact.",
       ],
     },
     howWeWork: {
       h2: "How **We Work.**",
       steps: [
-        { title: "Free audit", body: "We show you how homeowners find you today and where calls slip away." },
-        { title: "Build the foundation", body: "Website, Google profile and call tracking, set up the right way." },
-        { title: "Turn on the calls", body: "Ads and Local Services Ads, once the foundation is ready." },
-        { title: "Report and improve", body: "A plain-English report every month, and steady tuning." },
+        { title: "Free audit", body: "We show you how homeowners find you today and where calls are slipping away." },
+        { title: "Build the foundation", body: "Website, Google Business Profile and call tracking, configured correctly." },
+        { title: "Scale demand", body: "Local Services Ads and search campaigns, launched once the foundation converts." },
+        { title: "Report and optimize", body: "A clear monthly report and continuous optimization." },
       ],
       linkLabel: "See the full process",
     },
@@ -839,10 +840,10 @@ export const hvac: IndustryContent = {
     meta: {
       title: "HVAC Marketing Playbook: Guides for Owners | Booked Growth",
       description:
-        "Plain-English HVAC marketing guides for HVAC and plumbing owners: Google Ads, Local Services Ads, local SEO, websites, reviews and AI search.",
+        "Practical HVAC marketing guides for HVAC and plumbing owners: Google Ads, Local Services Ads, local SEO, websites, reviews and AI search.",
     },
     h1: "HVAC Marketing **Playbook.**",
-    intro: "Plain-English guides for HVAC and plumbing owners who want more calls.",
+    intro: "Practical guides for HVAC and plumbing owners focused on generating more calls and booked jobs.",
     categories: ["Google Ads", "Local SEO", "Websites", "Reviews", "AI Search"],
     signup: {
       h2: "Get One Useful **Marketing Tip** a Month.",
@@ -853,7 +854,7 @@ export const hvac: IndustryContent = {
     authorLine: "Founder of Booked Growth. Google Ads Search certified. Helps HVAC and plumbing companies in South Florida get more calls.",
     ctaBox: {
       h3: "Want to Know Where **You're Losing Calls?**",
-      body: "Get a free audit of your Google profile, website and ads. 30 minutes, no pressure.",
+      body: "Get a free audit of your Google profile, website and ads. 30 minutes, no obligation.",
     },
   },
 
@@ -868,12 +869,12 @@ export const hvac: IndustryContent = {
     },
     eyebrow: "Free audit",
     h1: "Get Your Free **Online Audit.**",
-    sub: "A 30-minute call where we show you how homeowners find you today and where you're losing calls. No pressure, no pitch deck.",
+    sub: "A 30-minute call where we show you how homeowners find you today and where calls are slipping away. No pressure, no pitch deck.",
     formTitle: "Tell us about your company",
     formNote: "Takes 2 minutes. Website URL is optional.",
     calTitle: "Book Your Free Online Audit Call",
     calNote: "Pick a time that works for you. Free, 30 minutes, held via Google Meet.",
-    reassurance: "Free. No commitment. Just a clear look at where your calls are going.",
+    reassurance: "Free, with no commitment. Just a clear view of where your calls are going.",
     submitLabel: "Get My Free Audit",
     successTitle: "You're all set.",
     successBody:
@@ -920,7 +921,7 @@ export const hvac: IndustryContent = {
 
   closingCta: {
     h2: "Ready to **Fill the Board?**",
-    body: "Get a free audit of how homeowners find you today, and what it would take to get more of their calls.",
+    body: "Get a clear picture of how homeowners find you today and what it would take to capture more of their calls.",
   },
   seeAllFaqLabel: "See all questions",
 };
