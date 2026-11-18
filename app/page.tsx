@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { industry, site } from "@/content";
 import { buildMetadata } from "@/lib/seo";
-import HeroPhoto from "@/components/HeroPhoto";
+import HomeHero from "@/components/HomeHero";
 import BoardCompare from "@/components/BoardCompare";
 import WhereFound from "@/components/WhereFound";
 import ServiceCards from "@/components/ServiceCards";
@@ -22,7 +22,7 @@ const performIcons = ["mobile", "phone", "pin", "chart", "calendar", "shield"];
 export default function HomePage() {
   return (
     <>
-      <HeroPhoto />
+      <HomeHero />
 
       {/* Problem */}
       <section className="section light" aria-labelledby="problem">
@@ -52,7 +52,7 @@ export default function HomePage() {
             <p className="lead mt-5">{h.servicesGrid.intro}</p>
           </div>
           <div className="mt-10">
-            <ServiceCards services={industry.services} />
+            <ServiceCards services={industry.services} blurbs={h.servicesGrid.cardBlurbs} flagshipPoints={h.servicesGrid.flagshipPoints} />
           </div>
         </div>
       </section>

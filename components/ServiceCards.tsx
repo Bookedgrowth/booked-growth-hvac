@@ -1,8 +1,20 @@
 import Link from "next/link";
-import type { ServiceContent } from "@/content";
+import type { ServiceContent, TitledText } from "@/content";
 import Icon, { serviceIcon } from "./Icon";
 
-export default function ServiceCards({ services }: { services: ServiceContent[] }) {
+/**
+ * `blurbs` and `flagshipPoints` are optional per-page overrides (the home page uses them).
+ * Without them, cards fall back to each service's shared cardBlurb and its first bullet list.
+ */
+export default function ServiceCards({
+  services,
+  blurbs,
+  flagshipPoints,
+}: {
+  services: ServiceContent[];
+  blurbs?: Record<string, string>;
+  flagshipPoints?: TitledText[];
+}) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {services.map((s) => (
@@ -24,15 +36,15 @@ export default function ServiceCards({ services }: { services: ServiceContent[] 
               )}
             </div>
             <h3 className={`h3 mt-5 ${s.featured ? "!text-[26px]" : ""}`}>{s.cardTitle}</h3>
-            <p className={`mt-2 muted ${s.featured ? "text-lg" : ""}`}>{s.cardBlurb}</p>
-            {s.featured && s.extraSections?.[0]?.bullets && (
+            <p className={`mt-2 muted ${s.featured ? "text-lg" : ""}`}>{blurbs?.[s.slug] ?? s.cardBlurb}</p>
+            {s.featured && (flagshipPoints ?? s.extraSections?.[0]?.bullets) && (
               <ul className="mt-6 hidden flex-col gap-3 lg:flex">
-                {s.extraSections[0].bullets.map((b) => (
+                {(flagshipPoints ?? s.extraSections?.[0]?.bullets?.map((b) => ({ title: b.title, body: `${b.body.split(". ")[0]}.` })) ?? []).map((b) => (
                   <li key={b.title} className="flex gap-3">
                     <span className="mt-1 text-[var(--green)] shrink-0"><Icon name="check" size={16} strokeWidth={2.8} /></span>
                     <span>
                       <span className="block font-semibold text-white">{b.title}</span>
-                      <span className="block text-[15px] subtle">{b.body.split(". ")[0]}.</span>
+                      <span className="block text-[15px] subtle">{b.body}</span>
                     </span>
                   </li>
                 ))}

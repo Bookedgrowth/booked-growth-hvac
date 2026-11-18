@@ -105,6 +105,25 @@ export type FormField =
       required?: boolean;
     };
 
+/** Home hero calendar (styled like a calendar app). Home page only. */
+export type HeroCalendar = {
+  ariaLabel: string;
+  appName: string;
+  todayLabel: string;
+  month: string;
+  days: { label: string; date: string }[];
+  todayIndex: number;
+  rows: string[];
+  /** col and row are 1-based. The first `alreadyBooked` jobs show from the start. */
+  jobs: { col: number; row: number; title: string; time: string }[];
+  alreadyBooked: number;
+  bookedColor: string;
+  perStage: number;
+  stages: { caption: string; color: string }[];
+  counterLabel: string; // "{n} of {total} booked"
+  fullLabel: string;
+};
+
 export type Testimonial = {
   quote: string;
   firstName: string;
@@ -144,16 +163,24 @@ export type IndustryContent = {
       primaryCta: string;
       secondaryCta: { label: string; href: string };
       photo: { src: string; width: number; height: number; alt: string };
-      notifications: { icon: string; app: string; text: string }[];
+      calendar: HeroCalendar;
     };
     problem: ContentBlock;
     whereFound: {
       h2: string;
       intro: string;
       businessName: string;
+      winLabel: string;
       cards: { kind: "maps" | "lsa" | "searchAd" | "organic" | "reviews"; label: string; winner: string; href: string }[];
     };
-    servicesGrid: { h2: string; intro: string };
+    servicesGrid: {
+      h2: string;
+      intro: string;
+      /** Home-only card copy. Keyed by service slug; falls back to the shared cardBlurb. */
+      cardBlurbs?: Record<string, string>;
+      /** Home-only flagship card points; falls back to the paid ads page bullets. */
+      flagshipPoints?: TitledText[];
+    };
     process: {
       h2: string;
       steps: TitledText[];

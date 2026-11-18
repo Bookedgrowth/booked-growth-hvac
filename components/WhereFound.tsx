@@ -85,7 +85,7 @@ export default function WhereFound() {
                 <div className="flex-1 rounded-xl border border-[var(--line-strong)] bg-[var(--bg-raised)] p-4" aria-hidden="true">
                   <Mock kind={c.kind} />
                 </div>
-                <p className="mt-3 text-[12px] uppercase tracking-[0.12em] subtle">Won with</p>
+                <p className="mt-3 text-[12px] uppercase tracking-[0.12em] subtle">{wf.winLabel}</p>
                 <Link href={c.href} className="mt-0.5 inline-flex items-center gap-1.5 text-[15px] font-semibold text-[var(--green-light)] hover:text-white">
                   {c.winner}
                   <Icon name="arrow" size={14} />

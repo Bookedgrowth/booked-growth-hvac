@@ -445,29 +445,6 @@ p {
   color: #fcd34d;
 }
 
-/* ---------- Hero phone notifications ---------- */
-.notif {
-  background: rgba(246, 246, 248, 0.9);
-  -webkit-backdrop-filter: blur(18px) saturate(1.6);
-  backdrop-filter: blur(18px) saturate(1.6);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.28);
-  animation: notif-in 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-@keyframes notif-in {
-  from {
-    opacity: 0;
-    transform: translateY(14px) scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .notif {
-    animation: none;
-  }
-}
 
 /* Hide horizontal scrollbar on swipe rows but keep them scrollable */
 .no-scrollbar {
@@ -486,5 +463,103 @@ p {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- Home hero (components/HomeHero.tsx, home page only) ----------
+ * Home hero. Default styles are the static end state (phones, tablets, reduced motion):
+ * full board, every caption lit, "Board full". The scroll-driven version only applies
+ * at 1024px+ when the visitor allows motion, so there is no flash or hydration mismatch.
+ */
+
+.hh-wrap {
+  position: relative;
+  background: #131620;
+}
+
+.hh-pin {
+  position: relative;
+  overflow: hidden;
+  padding: calc(var(--nav-h) + 40px) var(--gutter) var(--section-y);
+}
+
+.hh-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(19, 22, 32, 0.9) 0%, rgba(19, 22, 32, 0.82) 50%, rgba(19, 22, 32, 0.92) 100%);
+}
+
+/* Keeps the transparent nav readable over the brighter right side of the photo. */
+.hh-navshade {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 180px;
+  background: linear-gradient(180deg, rgba(19, 22, 32, 0.6) 0%, rgba(19, 22, 32, 0) 100%);
+  pointer-events: none;
+}
+
+.hh-event {
+  opacity: 1;
+  transform: none;
+}
+.hh-stage {
+  opacity: 1;
+}
+.hh-bar {
+  width: 100%;
+}
+.hh-counter-live {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hh-pin {
+    padding-top: calc(var(--nav-h) + 56px);
+  }
+  .hh-overlay {
+    background: linear-gradient(90deg, rgba(19, 22, 32, 0.96) 0%, rgba(19, 22, 32, 0.88) 36%, rgba(19, 22, 32, 0.6) 64%, rgba(19, 22, 32, 0.42) 100%);
+  }
+}
+
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  /* 100vh of hero + about 130vh of pinned scroll for the sequence. */
+  .hh-wrap {
+    height: 230vh;
+  }
+  .hh-pin {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    padding-top: var(--nav-h);
+    padding-bottom: 0;
+  }
+  .hh-inner {
+    width: 100%;
+  }
+  .hh-event {
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+  }
+  .hh-event[data-on="false"] {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  .hh-stage {
+    transition: opacity 0.3s ease;
+  }
+  .hh-stage[data-on="false"] {
+    opacity: 0.45;
+  }
+  .hh-bar {
+    width: var(--p, 0%);
+    transition: width 0.4s ease;
+  }
+  .hh-counter-live {
+    display: inline;
+  }
+  .hh-counter-static {
+    display: none;
   }
 }
