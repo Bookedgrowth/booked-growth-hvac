@@ -791,7 +791,6 @@ export const hvac: IndustryContent = {
       ],
       linkLabel: "See the full process",
     },
-    credentialsH2: "Credentials",
     founder: {
       title: "Founded by Stefano Branca",
       quote:

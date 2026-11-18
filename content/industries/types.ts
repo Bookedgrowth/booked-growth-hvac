@@ -229,7 +229,6 @@ export type IndustryContent = {
     principles: { h2: string; items: { icon: string; title: string; body: string }[] };
     whyOnly: { h2: string; body: string[] };
     howWeWork: { h2: string; steps: TitledText[]; linkLabel: string };
-    credentialsH2: string;
     founder: { title: string; quote: string; note: string };
   };
 

@@ -4,7 +4,6 @@ import { industry, site } from "@/content";
 import { buildMetadata } from "@/lib/seo";
 import PageHero from "@/components/PageHero";
 import ClosingCta from "@/components/ClosingCta";
-import Credentials from "@/components/Credentials";
 import { Headline, RichText } from "@/components/Text";
 import Icon from "@/components/Icon";
 
@@ -81,13 +80,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Credentials + founder note */}
-      <section className="section light" aria-labelledby="credentials">
-        <div className="container grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
-          <div>
-            <h2 id="credentials" className="text-xs font-bold uppercase tracking-[0.16em] subtle">{a.credentialsH2}</h2>
-            <Credentials className="mt-4" />
-          </div>
+      {/* Founder note */}
+      <section className="section light" aria-label={a.founder.title}>
+        <div className="container-narrow">
           <figure className="card flex flex-col gap-5 sm:flex-row sm:items-center">
             <Image
               src={site.founder.headshot}
