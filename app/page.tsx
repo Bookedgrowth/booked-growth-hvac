@@ -12,6 +12,7 @@ import { Headline, RichText } from "@/components/Text";
 import { StatSource } from "@/components/StatNote";
 import Icon from "@/components/Icon";
 import { SampleAudit, Testimonials, FoundingPartner } from "@/components/Proof";
+import HomePlaybook from "@/components/HomePlaybook";
 
 const h = industry.home;
 
@@ -146,6 +147,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HomePlaybook />
 
       <ClosingCta h2={h.closing.h2} body={h.closing.body} />
     </>

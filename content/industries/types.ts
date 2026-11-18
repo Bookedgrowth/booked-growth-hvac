@@ -207,6 +207,8 @@ export type IndustryContent = {
     foundingPartner: { eyebrow: string; h2: string; body: string };
     guarantees: { h2: string; intro: string };
     founder: { eyebrow: string; h2: string; line: string; founderLine: string; linkLabel: string };
+    /** Home-only blog strip. Shows the 3 newest posts automatically; hidden when there are none. */
+    playbook: { eyebrow: string; h2: string; intro: string; linkLabel: string; cardCta: string; count: number };
     closing: { h2: string; body: string };
   };
 

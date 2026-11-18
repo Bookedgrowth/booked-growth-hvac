@@ -628,6 +628,14 @@ export const hvac: IndustryContent = {
       founderLine: "Founded by Stefano Branca",
       linkLabel: "More about us",
     },
+    playbook: {
+      eyebrow: "From the playbook",
+      h2: "Insights From **the Playbook.**",
+      intro: "Practical breakdowns of the channels, numbers and decisions behind a full schedule.",
+      linkLabel: "View all guides",
+      cardCta: "Read the guide",
+      count: 3,
+    },
     closing: {
       h2: "Ready to **Fill the Board?**",
       body: "Get a clear picture of how homeowners find you today, where calls are leaking and what it would take to capture more of them. No cost, no obligation.",
