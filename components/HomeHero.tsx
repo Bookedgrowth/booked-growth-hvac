@@ -150,7 +150,7 @@ function Calendar({ added }: { added: number }) {
             style={{ "--p": `${Math.round((added / TO_ADD) * 100)}%`, background: "linear-gradient(90deg, #4b89f3, #07c98f)" } as CSSProperties}
           />
         </div>
-        <ol className="mt-3 grid gap-2.5" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(104px, 1fr))" }}>
+        <ol className="mt-3 grid grid-cols-[repeat(auto-fit,minmax(104px,1fr))] gap-2.5 lg:grid-cols-[1fr_1.25fr_1fr_1fr_1fr] lg:gap-2">
           {cal.stages.map((st, i) => (
             <li key={st.caption} data-on={full || i <= activeStage} className={`hh-stage flex items-start gap-2`}>
               <span aria-hidden="true" className="mt-1 h-2.5 w-2.5 shrink-0 rounded-[3px]" style={{ background: st.color }} />
@@ -208,7 +208,7 @@ export default function HomeHero() {
             </div>
           </div>
 
-          <div className="relative w-full max-w-[500px] lg:justify-self-end">
+          <div className="relative w-full max-w-[500px] lg:max-w-[540px] lg:justify-self-end">
             <Calendar added={added} />
           </div>
         </div>
